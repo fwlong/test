@@ -30,14 +30,14 @@
                 android:id="@+id/nav_home_icon"
                 android:layout_width="@dimen/nav_icon_size"
                 android:layout_height="@dimen/nav_icon_size"
-                navi:icon="@{naviModel.isHomeChecked?@drawable/ic_launcher:@drawable/ic_launcher_round}" />
+                navi:icon="@{naviModel.isHomeChecked?@drawable/icon_main_tab_home_selected:@drawable/icon_main_tab_home_normal}" />
 
             <TextView
                 android:id="@+id/nav_home_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/nav_icon_txt_margin"
-                android:textColor="@{naviModel.isHomeChecked?@color/colorPrimary:@color/colorAccent}"
+                android:textColor="@{naviModel.isHomeChecked?@color/colorPrimary:@color/color_tab_unselected_txt}"
                 android:textSize="@dimen/nav_txt_size"
                 android:text="首页"
                 />
@@ -57,14 +57,14 @@
             <ImageView
                 android:layout_width="@dimen/nav_icon_size"
                 android:layout_height="@dimen/nav_icon_size"
-                navi:icon="@{naviModel.isApplyListChecked?@drawable/ic_launcher:@drawable/ic_launcher_round}"
+                navi:icon="@{naviModel.isApplyListChecked?@drawable/icon_main_tab_reimburse_selected:@drawable/icon_main_tab_reimburse_normal}"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/nav_icon_txt_margin"
-                android:textColor="@{naviModel.isApplyListChecked?@color/colorPrimary:@color/colorAccent}"
+                android:textColor="@{naviModel.isApplyListChecked?@color/colorPrimary:@color/color_tab_unselected_txt}"
                 android:textSize="@dimen/nav_txt_size"
                 android:text="审批"
                 />
@@ -83,7 +83,7 @@
             <ImageView
                 android:layout_width="@dimen/nav_height"
                 android:layout_height="@dimen/nav_height"
-                android:src="@mipmap/ic_launcher_round"
+                android:src="@drawable/icon_main_tab_open_circle"
                 />
         </LinearLayout>
 
@@ -99,14 +99,14 @@
             <ImageView
                 android:layout_width="@dimen/nav_icon_size"
                 android:layout_height="@dimen/nav_icon_size"
-                navi:icon="@{naviModel.isChartChecked? @drawable/ic_launcher : @drawable/ic_launcher_round}"
+                navi:icon="@{naviModel.isChartChecked? @drawable/icon_main_tab_account_selected : @drawable/icon_main_tab_account_normal}"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/nav_icon_txt_margin"
-                android:textColor="@{naviModel.isChartChecked?@color/colorPrimary:@color/colorAccent}"
+                android:textColor="@{naviModel.isChartChecked?@color/colorPrimary:@color/color_tab_unselected_txt}"
                 android:textSize="@dimen/nav_txt_size"
                 android:text="帐表"
                 />
@@ -126,14 +126,14 @@
             <ImageView
                 android:layout_width="@dimen/nav_icon_size"
                 android:layout_height="@dimen/nav_icon_size"
-                navi:icon="@{naviModel.isMineChecked?@drawable/ic_launcher:@drawable/ic_launcher_round}"
+                navi:icon="@{naviModel.isMineChecked?@drawable/icon_main_tab_me_selected:@drawable/icon_main_tab_me_normal}"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/nav_icon_txt_margin"
-                android:textColor="@{naviModel.isMineChecked?@color/colorPrimary:@color/colorAccent}"
+                android:textColor="@{naviModel.isMineChecked?@color/colorPrimary:@color/color_tab_unselected_txt}"
                 android:textSize="@dimen/nav_txt_size"
                 android:text="我的"
                 />
