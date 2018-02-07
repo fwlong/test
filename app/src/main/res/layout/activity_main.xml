@@ -7,6 +7,9 @@
         <variable
             name="mainModel"
             type="cn.jsjst.reimbursement.main.MainViewModel"/>
+        <variable
+            name="navModel"
+            type="cn.jsjst.reimbursement.base.NavModel"/>
     </data>
 
     <LinearLayout
@@ -21,7 +24,7 @@
             android:layout_weight="1"
             ></FrameLayout>
         <include layout="@layout/include_bottom_nav"
-            bind:naviModel="@{mainModel.mNavModel}"
+            bind:naviModel="@{navModel}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"

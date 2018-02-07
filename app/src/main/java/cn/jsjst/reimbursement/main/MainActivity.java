@@ -6,6 +6,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import cn.jsjst.reimbursement.R;
+import cn.jsjst.reimbursement.base.FragmentHelper;
+import cn.jsjst.reimbursement.base.NavModel;
 import cn.jsjst.reimbursement.databinding.ActivityMainBinding;
 
 /**
@@ -18,13 +20,48 @@ import cn.jsjst.reimbursement.databinding.ActivityMainBinding;
  */
 public class MainActivity extends AppCompatActivity {
 
+    private String mCurrentTab = FragmentHelper.TAG_HOME;
+    private MainViewModel mMainViewModel;
+    private ActivityMainBinding mMainBinding;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityMainBinding activityMainBinding = DataBindingUtil.setContentView(this,
-                R.layout.activity_main);
-        MainViewModel mainViewModel = new MainViewModel(this);
-        mainViewModel.initUI(R.id.content);
-        activityMainBinding.setMainModel(mainViewModel);
+        mMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        mMainViewModel = new MainViewModel(this);
+        initUI();
+        mMainBinding.setMainModel(mMainViewModel);
     }
+
+    private void initUI() {
+        switchFragment(null, FragmentHelper.TAG_HOME);
+        mMainBinding.setNavModel(new NavModel(new NavModel.OnNaviBottomClickListener() {
+            @Override
+            public void onNaviBottomClick(int type) {
+                switch (type) {
+                    case NavModel.HOME_TAB:
+                        switchFragment(mCurrentTab, FragmentHelper.TAG_HOME);
+                        break;
+                    case NavModel.APPLY_LIST_TAB:
+                        switchFragment(mCurrentTab, FragmentHelper.TAG_APPLY_LIST);
+                        break;
+                    case NavModel.CHART_TAB:
+                        switchFragment(mCurrentTab, FragmentHelper.TAG_CHART);
+                        break;
+                    case NavModel.MINE_TAB:
+                        switchFragment(mCurrentTab, FragmentHelper.TAG_MINE);
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }));
+    }
+
+    private void switchFragment(String currentTab, String toTab) {
+        FragmentHelper.switchFragment(this, R.id.content, currentTab, toTab);
+        mCurrentTab = toTab;
+    }
+
+
 }
