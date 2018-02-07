@@ -3,7 +3,6 @@ package cn.jsjst.reimbursement.bindingutil;
 import android.databinding.BindingAdapter;
 import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import cn.jsjst.reimbursement.GlideApp;
 

@@ -14,19 +14,19 @@ import android.view.View;
  */
 public abstract class BaseViewModel {
 
-    Context mContext;
+    public Context mContext;
 
     public ObservableField<Boolean> isEmpty = new ObservableField<>(false);
 
     public ObservableField<Boolean> isNetError = new ObservableField<>(false);
 
-    public NavModel mNavModel = new NavModel();
+
 
     public BaseViewModel(Context context){
         this.mContext = context;
     }
 
-//    public abstract void refreshView(View view);
+    public abstract void refreshView(View view);
 
     public void showLoading(){}
 

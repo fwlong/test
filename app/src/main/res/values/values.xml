@@ -2,7 +2,7 @@
 <resources>
     <dimen name="nav_height">48dp</dimen>
     <dimen name="nav_item_padding_top_bottom">5dp</dimen>
-    <dimen name="nav_icon_size">18dp</dimen>
-    <dimen name="nav_txt_size">6dp</dimen>
+    <dimen name="nav_icon_size">24dp</dimen>
+    <dimen name="nav_txt_size">12dp</dimen>
     <dimen name="nav_icon_txt_margin">2dp</dimen>
 </resources>
