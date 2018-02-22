@@ -1,4 +1,4 @@
-package cn.jsjst.reimbursement.base;
+package cn.jsjst.reimbursement.component.base;
 
 import android.databinding.ObservableField;
 import android.view.View;

@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Reimbursement</string>
+
+    <string name="title_my_apply_list">我的申请</string>
+    <string name="title_my_approval_list">我的审批</string>
 </resources>

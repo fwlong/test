@@ -6,10 +6,10 @@
     <data>
         <variable
             name="mainModel"
-            type="cn.jsjst.reimbursement.main.MainViewModel"/>
+            type="cn.jsjst.reimbursement.component.main.MainViewModel"/>
         <variable
             name="navModel"
-            type="cn.jsjst.reimbursement.base.NavModel"/>
+            type="cn.jsjst.reimbursement.component.base.NavModel"/>
     </data>
 
     <LinearLayout

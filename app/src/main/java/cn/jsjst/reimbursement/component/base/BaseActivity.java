@@ -1,4 +1,4 @@
-package cn.jsjst.reimbursement.base;
+package cn.jsjst.reimbursement.component.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

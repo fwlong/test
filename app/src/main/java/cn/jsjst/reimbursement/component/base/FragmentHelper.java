@@ -1,15 +1,15 @@
-package cn.jsjst.reimbursement.base;
+package cn.jsjst.reimbursement.component.base;
 
-import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
-import cn.jsjst.reimbursement.applylist.ApplyListFragment;
-import cn.jsjst.reimbursement.chart.ChartFragment;
-import cn.jsjst.reimbursement.home.HomeFragment;
-import cn.jsjst.reimbursement.mine.MineFragment;
+
+import cn.jsjst.reimbursement.component.applylist.ApplyListFragment;
+import cn.jsjst.reimbursement.component.chart.ChartFragment;
+import cn.jsjst.reimbursement.component.home.HomeFragment;
+import cn.jsjst.reimbursement.component.mine.MineFragment;
 
 /**
  * 类说明
@@ -26,11 +26,11 @@ public class FragmentHelper {
     public final static String TAG_CHART = "chart";
     public final static String TAG_APPLY_LIST = "apply_list";
 
-    public static Fragment getFragmentByTag(Activity activity, String tag) {
+    public static Fragment getFragmentByTag(AppCompatActivity activity, String tag) {
         if (activity == null || tag == null) {
             return null;
         }
-        FragmentManager fragmentManager = activity.getFragmentManager();
+        FragmentManager fragmentManager = activity.getSupportFragmentManager();
         Fragment target = fragmentManager.findFragmentByTag(tag);
         switch (tag) {
             case TAG_HOME:
@@ -46,11 +46,11 @@ public class FragmentHelper {
         }
     }
 
-    public static void switchFragment(Activity activity, int contentId, String from, String to) {
+    public static void switchFragment(AppCompatActivity activity, int contentId, String from, String to) {
         if (to == null || to.equals(from)) {
             return;
         }
-        FragmentManager fm = activity.getFragmentManager();
+        FragmentManager fm = activity.getSupportFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
         Fragment toFrag = getFragmentByTag(activity, to);
         if (from != null) {

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="naviModel"
-            type="cn.jsjst.reimbursement.base.NavModel" />
+            type="cn.jsjst.reimbursement.component.base.NavModel" />
     </data>
 
 

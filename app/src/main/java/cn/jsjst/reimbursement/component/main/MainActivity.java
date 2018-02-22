@@ -1,4 +1,4 @@
-package cn.jsjst.reimbursement.main;
+package cn.jsjst.reimbursement.component.main;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import cn.jsjst.reimbursement.R;
-import cn.jsjst.reimbursement.base.FragmentHelper;
-import cn.jsjst.reimbursement.base.NavModel;
+import cn.jsjst.reimbursement.component.base.FragmentHelper;
+import cn.jsjst.reimbursement.component.base.NavModel;
 import cn.jsjst.reimbursement.databinding.ActivityMainBinding;
 
 /**

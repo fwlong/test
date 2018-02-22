@@ -1,12 +1,11 @@
-package cn.jsjst.reimbursement.main;
+package cn.jsjst.reimbursement.component.main;
 
-import android.app.Activity;
 import android.content.Context;
 import android.view.View;
 
-import cn.jsjst.reimbursement.base.BaseViewModel;
-import cn.jsjst.reimbursement.base.FragmentHelper;
-import cn.jsjst.reimbursement.base.NavModel;
+import cn.jsjst.reimbursement.component.base.BaseViewModel;
+import cn.jsjst.reimbursement.component.base.FragmentHelper;
+import cn.jsjst.reimbursement.component.base.NavModel;
 
 /**
  * 类说明
