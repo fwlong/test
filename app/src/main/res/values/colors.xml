@@ -6,5 +6,8 @@
 
     <color name="color_tab_unselected_txt">#cccccc</color>
 
+    <color name="color_black_title">#de000000</color>
+    <color name="color_black_content">#8a000000</color>
+
 
 </resources>

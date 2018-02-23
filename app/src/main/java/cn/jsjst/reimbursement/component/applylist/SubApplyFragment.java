@@ -23,7 +23,7 @@ public class SubApplyFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
             @Nullable Bundle savedInstanceState) {
-        View contentView = inflater.inflate(R.layout.fragment_list_sub_apply,container,false);
+        View contentView = inflater.inflate(R.layout.fragment_apply_approval_sub,container,false);
         return contentView;
     }
 }

@@ -5,4 +5,14 @@
     <dimen name="nav_icon_size">24dp</dimen>
     <dimen name="nav_txt_size">12dp</dimen>
     <dimen name="nav_icon_txt_margin">2dp</dimen>
+
+    <dimen name="custom_recycler_decoration_height">15dp</dimen>
+
+    <dimen name="custom_item_margin_vertical">10dp</dimen>
+    <dimen name="custom_item_padding_horizontal">15dp</dimen>
+    <dimen name="custom_item_img_size">60dp</dimen>
+    <dimen name="custom_item_img_content_margin">10dp</dimen>
+    <dimen name="custom_item_title_text_size">12dp</dimen>
+    <dimen name="custom_item_title_text_margin">5dp</dimen>
+    <dimen name="custom_item_tip_text_size">8dp</dimen>
 </resources>

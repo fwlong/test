@@ -73,8 +73,9 @@ public class CustomAdapter<T> extends RecyclerView.Adapter<CustomAdapter.CustomV
         if(mLayoutId!=-1&&mVariableId!=-1){
             ViewDataBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()),mLayoutId,parent,false);
             return new CustomViewHolder(binding);
+        }else{
+            throw new IllegalArgumentException("No layoutId & variableId !!!");
         }
-        return null;
     }
 
     @Override

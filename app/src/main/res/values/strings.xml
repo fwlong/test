@@ -3,4 +3,9 @@
 
     <string name="title_my_apply_list">我的申请</string>
     <string name="title_my_approval_list">我的审批</string>
+
+    <string name="title_apply_type">申请类型:</string>
+    <string name="title_apply_name">申请人:</string>
+    <string name="title_apply_depart">申请人部门:</string>
+    <string name="title_apply_status">申请状态:</string>
 </resources>

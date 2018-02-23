@@ -6,6 +6,7 @@ import android.widget.ImageView;
 
 import cn.jsjst.reimbursement.GlideApp;
 
+
 /**
  * 类说明
  *
@@ -16,7 +17,7 @@ import cn.jsjst.reimbursement.GlideApp;
  */
 public class ImageBinding {
 
-    @BindingAdapter({"app:imgUrl","app:placeholder","app:error"})
+    @BindingAdapter({"img:imgurl","img:placeholder","img:error"})
     public static void loadImage(ImageView imageView,String url, Drawable holderDrawable,Drawable errorDrawable){
         GlideApp.with(imageView.getContext())
                 .load(url)
@@ -24,7 +25,10 @@ public class ImageBinding {
                 .error(errorDrawable)
                 .fitCenter()
                 .into(imageView);
+
     }
+
+
 
     @BindingAdapter("android:src")
     public static void setSrc(ImageView imageView,int resId){

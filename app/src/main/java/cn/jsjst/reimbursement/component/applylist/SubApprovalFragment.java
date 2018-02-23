@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import cn.jsjst.reimbursement.R;
 
 /**
  * 类说明
@@ -23,7 +22,7 @@ public class SubApprovalFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
             @Nullable Bundle savedInstanceState) {
-        View contentView = inflater.inflate(R.layout.fragment_list_sub_approval,container,false);
+        View contentView = inflater.inflate(R.layout.fragment_apply_approval_sub,container,false);
         return contentView;
     }
 }
