@@ -12,7 +12,7 @@ import android.view.View;
  * @see [相关类]
  * @since [模块]
  */
-public class ItemModelView {
+public class ItemViewModel {
 
     public final static int TYPE_APPLY = 0x1;
     public final static int TYPE_APPROVAL = 0x2;
@@ -38,10 +38,10 @@ public class ItemModelView {
     public final ObservableInt applyTypeInt = new ObservableInt();
 
 
-    public ItemModelView() {
+    public ItemViewModel() {
     }
 
-    public ItemModelView(int itemType) {
+    public ItemViewModel(int itemType) {
         this.itemType = itemType;
     }
 

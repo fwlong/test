@@ -6,7 +6,7 @@
 
         <variable
             name="itemModel"
-            type="cn.jsjst.reimbursement.component.applylist.ItemModelView" />
+            type="cn.jsjst.reimbursement.component.applylist.ItemViewModel" />
     </data>
 
     <RelativeLayout

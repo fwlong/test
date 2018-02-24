@@ -8,4 +8,21 @@
     <string name="title_apply_name">申请人:</string>
     <string name="title_apply_depart">申请人部门:</string>
     <string name="title_apply_status">申请状态:</string>
+
+    <string name="title_business_travel_apply_depart">出差部门:</string>
+    <string name="title_business_travel_apply_people">出差人员:</string>
+    <string name="title_business_travel_apply_people_count">出差人数:</string>
+    <string name="title_business_travel_apply_person_charge">出差负责人:</string>
+    <string name="title_business_travel_apply_reason">出差事由:</string>
+    
+    <string name="title_business_travel_apply_address_start">出发地:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="title_business_travel_apply_address_way">途径地:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="title_business_travel_apply_address_end">目的地:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="title_business_travel_apply_vehicle_go">出发交通工具:</string>
+    <string name="title_business_travel_apply_vehicle_back">返回交通工具:</string>
+    <string name="title_business_travel_apply_time_begin">开始时间:&#160;&#160;&#160;&#160;</string>
+    <string name="title_business_travel_apply_time_end">结束时间:&#160;&#160;&#160;&#160;</string>
+
+    <string name="btn_next">下一步</string>
+
 </resources>

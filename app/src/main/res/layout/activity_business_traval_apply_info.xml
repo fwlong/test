@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/custom_activity_padding"
+            >
+            <TextView
+                android:id="@+id/title_depart_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black_title"
+                android:textSize="@dimen/custom_apply_title_text_size"
+                android:text="@string/title_business_travel_apply_depart"
+                android:layout_alignBaseline="@id/content_depart_edit"
+                />
+            <EditText
+                android:id="@+id/content_depart_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/title_depart_txt"
+                android:layout_marginLeft="@dimen/apply_business_info_title_content_margin"
+                android:textSize="@dimen/custom_apply_content_text_size"
+                android:textColor="@color/color_black_content"
+                android:layout_marginTop="@dimen/custom_apply_item_margin"
+                />
+
+            <EditText
+                android:id="@+id/content_people_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/custom_apply_content_text_size"
+                android:textColor="@color/color_black_content"
+                android:layout_below="@id/content_depart_edit"
+                android:layout_marginTop="@dimen/custom_apply_item_margin"
+                android:layout_alignLeft="@id/content_depart_edit"
+                />
+
+            <TextView
+                android:id="@+id/title_apply_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_depart_txt"
+                android:layout_marginTop="@dimen/custom_apply_item_margin"
+                android:textSize="@dimen/custom_apply_title_text_size"
+                android:textColor="@color/color_black_title"
+                android:text="@string/title_business_travel_apply_people"
+                android:layout_alignBaseline="@id/content_people_edit"
+                />
+
+            <EditText
+                android:id="@+id/content_people_count_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/custom_apply_content_text_size"
+                android:textColor="@color/color_black_content"
+                android:layout_below="@id/content_people_edit"
+                android:layout_marginTop="@dimen/custom_apply_item_margin"
+                android:layout_alignLeft="@id/content_people_edit"
+                />
+            <TextView
+                android:id="@+id/title_people_count_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/custom_apply_title_text_size"
+                android:textColor="@color/color_black_title"
+                android:text="@string/title_business_travel_apply_people_count"
+                android:layout_alignBaseline="@id/content_people_count_edit"
+                />
+
+            <EditText
+                android:id="@+id/content_people_charge_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content_people_count_edit"
+                android:layout_alignLeft="@id/content_people_count_edit"
+                android:layout_marginTop="@dimen/custom_apply_item_margin"
+                android:textSize="@dimen/custom_apply_content_text_size"
+                android:textColor="@color/color_black_content"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_people_charge_txt"
+                android:layout_below="@id/content_people_count_edit"
+                android:layout_alignBaseline="@id/content_people_charge_edit"
+                android:textSize="@dimen/custom_apply_content_text_size"
+                android:textColor="@color/color_black_title"
+                android:text="@string/title_business_travel_apply_person_charge"
+                />
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/custom_apply_text_area_height"
+               android:id="@+id/content_apply_reason_edit"
+               android:layout_below="@id/content_people_charge_edit"
+               android:layout_marginTop="@dimen/custom_apply_item_margin"
+               android:layout_alignLeft="@id/content_people_charge_edit"
+               android:textSize="@dimen/custom_apply_content_text_size"
+               android:textColor="@color/color_black_content"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_apply_reason_txt"
+                android:layout_below="@id/content_people_charge_edit"
+                android:layout_alignBaseline="@id/content_apply_reason_edit"
+                android:textSize="@dimen/custom_apply_title_text_size"
+                android:textColor="@color/color_black_title"
+                android:text="@string/title_business_travel_apply_reason"
+                />
+
+            <TextView
+                android:layout_width="@dimen/custom_apply_next_btn_width"
+                android:layout_height="@dimen/custom_apply_next_btn_height"
+                android:id="@+id/next_btn"
+                android:layout_below="@id/content_apply_reason_edit"
+                android:layout_marginTop="@dimen/custom_apply_btn_item_margin"
+                android:layout_alignParentRight="true"
+                android:text="@string/btn_next"
+                android:gravity="center"
+                android:textSize="@dimen/custom_apply_title_text_size"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:background="@drawable/bg_next_btn_enable"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</layout>

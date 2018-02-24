@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <dimen name="toolbar_img_padding_left">15dp</dimen>
+    <dimen name="toolbar_img_padding_right">10dp</dimen>
+    <dimen name="toolbar_img_padding_vertical">5dp</dimen>
+    <dimen name="toolbar_title_text_size">18dp</dimen>
+    <dimen name="toolbar_title_text_min_height">54dp</dimen>
+    <dimen name="toolbar_title_padding_horizontal">5dp</dimen>
+    <dimen name="toolbar_right_img_margin">5dp</dimen>
+
     <dimen name="nav_height">48dp</dimen>
     <dimen name="nav_item_padding_top_bottom">5dp</dimen>
     <dimen name="nav_icon_size">24dp</dimen>
@@ -15,4 +24,18 @@
     <dimen name="custom_item_title_text_size">12dp</dimen>
     <dimen name="custom_item_title_text_margin">5dp</dimen>
     <dimen name="custom_item_tip_text_size">8dp</dimen>
+
+    <dimen name="custom_activity_padding">15dp</dimen>
+    <dimen name="custom_apply_title_text_size">12dp</dimen>
+    <dimen name="custom_apply_content_text_size">12dp</dimen>
+    <dimen name="custom_apply_item_margin">8dp</dimen>
+    <dimen name="custom_apply_btn_item_margin">50dp</dimen>
+    <dimen name="custom_apply_text_area_height">90dp</dimen>
+    <dimen name="custom_apply_next_btn_width">100dp</dimen>
+    <dimen name="custom_apply_next_btn_height">45dp</dimen>
+    <dimen name="custom_apply_next_btn_text_size">16dp</dimen>
+    <dimen name="custom_apply_next_btn_bg_corner">5dp</dimen>
+
+
+    <dimen name="apply_business_info_title_content_margin">15dp</dimen>
 </resources>
