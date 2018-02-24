@@ -35,6 +35,7 @@
     <dimen name="custom_apply_next_btn_height">45dp</dimen>
     <dimen name="custom_apply_next_btn_text_size">16dp</dimen>
     <dimen name="custom_apply_next_btn_bg_corner">5dp</dimen>
+    <dimen name="custom_reimb_amount_text_size">18dp</dimen>
 
 
     <dimen name="apply_business_info_title_content_margin">15dp</dimen>

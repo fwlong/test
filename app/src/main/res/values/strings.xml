@@ -22,6 +22,13 @@
     <string name="title_business_travel_apply_vehicle_back">返回交通工具:</string>
     <string name="title_business_travel_apply_time_begin">开始时间:&#160;&#160;&#160;&#160;</string>
     <string name="title_business_travel_apply_time_end">结束时间:&#160;&#160;&#160;&#160;</string>
+    
+    <string name="title_business_travel_reimb_project">所属项目:</string>
+    <string name="title_business_travel_reimb_cash_pay">现金支付:</string>
+    <string name="title_business_travel_reimb_transfer_account">转账支付:</string>
+    <string name="title_business_travel_reimb_card_pay">公务卡支付:</string>
+    <string name="title_business_travel_reimb_net_pay">网银支付:</string>
+    <string name="title_business_travel_reimb_sum_acount">报销总额:</string>
 
     <string name="btn_next">下一步</string>
 
