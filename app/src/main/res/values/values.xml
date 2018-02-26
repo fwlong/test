@@ -38,5 +38,5 @@
     <dimen name="custom_reimb_amount_text_size">18dp</dimen>
 
 
-    <dimen name="apply_business_info_title_content_margin">15dp</dimen>
+    <dimen name="apply_title_content_margin">15dp</dimen>
 </resources>

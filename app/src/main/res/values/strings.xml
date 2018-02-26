@@ -30,6 +30,16 @@
     <string name="title_business_travel_reimb_net_pay">网银支付:</string>
     <string name="title_business_travel_reimb_sum_acount">报销总额:</string>
 
+
+    <string name="title_public_service_apply_project">所属项目:</string>
+    <string name="title_public_service_apply_depart">接待部门:</string>
+    <string name="title_public_service_apply_reception_time">接待时间:</string>
+    <string name="title_public_service_apply_received_depart">被接待部门:</string>
+    <string name="title_public_service_apply_reception_address">接待地点:</string>
+    <string name="title_public_service_apply_reception_basis">接待依据:</string>
+    <string name="title_public_service_apply_reception_content">公务内容:</string>
+
+
     <string name="btn_next">下一步</string>
 
 </resources>

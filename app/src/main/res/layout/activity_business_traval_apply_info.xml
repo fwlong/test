@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/title_depart_txt"
-                android:layout_marginLeft="@dimen/apply_business_info_title_content_margin"
+                android:layout_marginLeft="@dimen/apply_title_content_margin"
                 android:textSize="@dimen/custom_apply_content_text_size"
                 android:textColor="@color/color_black_content"
                 android:layout_marginTop="@dimen/custom_apply_item_margin"
