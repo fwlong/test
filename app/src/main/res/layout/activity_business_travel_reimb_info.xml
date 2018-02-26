@@ -146,7 +146,7 @@
                 android:id="@+id/next_btn"
                 android:textStyle="bold"
                 android:textSize="@dimen/custom_apply_next_btn_text_size"
-                android:background="@drawable/bg_next_btn_enable"
+                android:background="@drawable/bg_next_btn"
                 android:text="@string/btn_next"
                 android:gravity="center"
                 android:layout_alignParentRight="true"

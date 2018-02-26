@@ -132,7 +132,7 @@
                 android:textSize="@dimen/custom_apply_title_text_size"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
-                android:background="@drawable/bg_next_btn_enable"
+                android:background="@drawable/bg_next_btn"
                 />
         </RelativeLayout>
 

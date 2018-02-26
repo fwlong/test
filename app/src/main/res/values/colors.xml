@@ -9,5 +9,6 @@
     <color name="color_black_title">#de000000</color>
     <color name="color_black_content">#8a000000</color>
 
+    <color name="color_disable">#eaeaea</color>
 
 </resources>

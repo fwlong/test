@@ -174,7 +174,7 @@
                 android:layout_marginTop="@dimen/custom_apply_btn_item_margin"
                 android:layout_alignParentRight="true"
                 android:gravity="center"
-                android:background="@drawable/bg_next_btn_enable"
+                android:background="@drawable/bg_next_btn"
                 />
 
 
