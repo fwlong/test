@@ -39,6 +39,15 @@
     <string name="title_public_service_apply_reception_basis">接待依据:</string>
     <string name="title_public_service_apply_reception_content">公务内容:</string>
 
+    <string name="title_public_service_apply_guest_person">来宾人员</string>
+    <string name="title_public_service_apply_guest_count">来宾人数:</string>
+    <string name="title_public_service_apply_eating_count">就餐人数:</string>
+    <string name="title_public_service_apply_accompany_count">参陪人数:</string>
+    <string name="title_public_service_apply_accompany_person">参陪人员:</string>
+
+    <string name="title_public_service_apply_dining_standards">就餐标准:</string>
+    <string name="title_public_service_apply_stay_fee">住宿费:&#160;&#160;</string>
+    <string name="title_public_servicec_apply_other_fee">其他费用:</string>
 
     <string name="btn_next">下一步</string>
 
