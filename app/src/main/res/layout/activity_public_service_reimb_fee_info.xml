@@ -5,7 +5,6 @@
 
     </data>
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,101 +12,117 @@
         >
 
         <TextView
-            android:id="@+id/title_reimb_project_txt"
+            android:id="@+id/title_public_service_reimb_dining_standards_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/content_reimb_project_edit"
-            android:text="@string/title_business_travel_reimb_project"
+            android:layout_alignBaseline="@id/content_public_service_reimb_dining_standards_edit"
+            android:text="@string/title_public_service_apply_dining_standards"
             android:textColor="@color/color_black_title"
             android:textSize="@dimen/custom_apply_title_text_size" />
 
         <EditText
-            android:id="@+id/content_reimb_project_edit"
+            android:id="@+id/content_public_service_reimb_dining_standards_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/apply_title_content_margin"
             android:layout_marginTop="@dimen/custom_apply_item_margin"
-            android:layout_toRightOf="@id/title_reimb_project_txt"
+            android:layout_toRightOf="@id/title_public_service_reimb_dining_standards_txt"
             android:textColor="@color/color_black_content"
             android:textSize="@dimen/custom_apply_content_text_size" />
 
+
         <EditText
-            android:id="@+id/content_reimb_cash_pay_edit"
+            android:id="@+id/content_public_service_reimb_stay_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/content_reimb_project_edit"
-            android:layout_below="@id/content_reimb_project_edit"
+            android:layout_alignLeft="@id/content_public_service_reimb_dining_standards_edit"
+            android:layout_below="@id/content_public_service_reimb_dining_standards_edit"
             android:layout_marginTop="@dimen/custom_apply_item_margin"
             android:textColor="@color/color_black_content"
             android:textSize="@dimen/custom_apply_content_text_size" />
 
         <TextView
-            android:id="@+id/title_reimb_cash_pay_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/content_reimb_cash_pay_edit"
-            android:layout_below="@id/content_reimb_project_edit"
+            android:layout_alignBaseline="@id/content_public_service_reimb_stay_edit"
+            android:layout_below="@id/content_public_service_reimb_dining_standards_edit"
+            android:text="@string/title_public_service_apply_stay_fee"
+            android:textColor="@color/color_black_title"
+            android:textSize="@dimen/custom_apply_title_text_size" />
+
+        <EditText
+            android:id="@+id/content_public_service_reimb_other_fee_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/content_public_service_reimb_stay_edit"
+            android:layout_below="@id/content_public_service_reimb_stay_edit"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:textColor="@color/color_black_content"
+            android:textSize="@dimen/custom_apply_content_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/content_public_service_reimb_other_fee_edit"
+            android:layout_below="@id/content_public_service_reimb_stay_edit"
+            android:text="@string/title_public_service_apply_other_fee"
+            android:textColor="@color/color_black_title"
+            android:textSize="@dimen/custom_apply_title_text_size" />
+
+        <EditText
+            android:id="@+id/content_public_service_reimb_cash_pay_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/content_public_service_reimb_other_fee_edit"
+            android:layout_below="@id/content_public_service_reimb_other_fee_edit"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:textColor="@color/color_black_content"
+            android:textSize="@dimen/custom_apply_content_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/content_public_service_reimb_cash_pay_edit"
+            android:layout_below="@id/content_public_service_reimb_other_fee_edit"
             android:text="@string/title_business_travel_reimb_cash_pay"
             android:textColor="@color/color_black_title"
             android:textSize="@dimen/custom_apply_title_text_size" />
 
         <EditText
-            android:id="@+id/content_transfer_account_edit"
+            android:id="@+id/content_public_service_reimb_transfer_pay_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/content_reimb_cash_pay_edit"
-            android:layout_below="@id/content_reimb_cash_pay_edit"
+            android:layout_alignLeft="@id/content_public_service_reimb_cash_pay_edit"
+            android:layout_below="@id/content_public_service_reimb_cash_pay_edit"
             android:layout_marginTop="@dimen/custom_apply_item_margin"
             android:textColor="@color/color_black_content"
             android:textSize="@dimen/custom_apply_content_text_size" />
 
         <TextView
-            android:id="@+id/title_transfer_account_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/content_transfer_account_edit"
-            android:layout_below="@id/content_reimb_cash_pay_edit"
+            android:layout_alignBaseline="@id/content_public_service_reimb_transfer_pay_edit"
+            android:layout_below="@id/content_public_service_reimb_cash_pay_edit"
             android:text="@string/title_business_travel_reimb_transfer_account"
             android:textColor="@color/color_black_title"
             android:textSize="@dimen/custom_apply_title_text_size" />
 
         <EditText
-            android:id="@+id/content_reimb_card_edit"
+            android:id="@+id/content_public_service_reimb_card_pay_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/content_transfer_account_edit"
-            android:layout_below="@id/content_transfer_account_edit"
+            android:layout_alignLeft="@id/content_public_service_reimb_transfer_pay_edit"
+            android:layout_below="@id/content_public_service_reimb_transfer_pay_edit"
             android:layout_marginTop="@dimen/custom_apply_item_margin"
             android:textColor="@color/color_black_content"
             android:textSize="@dimen/custom_apply_content_text_size" />
 
         <TextView
-            android:id="@+id/title_reimb_card_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/content_reimb_card_edit"
-            android:layout_below="@id/content_reimb_card_edit"
+            android:layout_alignBaseline="@id/content_public_service_reimb_card_pay_edit"
+            android:layout_below="@id/content_public_service_reimb_transfer_pay_edit"
             android:text="@string/title_business_travel_reimb_card_pay"
-            android:textColor="@color/color_black_title"
-            android:textSize="@dimen/custom_apply_title_text_size" />
-
-        <EditText
-            android:id="@+id/content_reimb_net_edit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/content_reimb_card_edit"
-            android:layout_below="@id/content_reimb_card_edit"
-            android:layout_marginTop="@dimen/custom_apply_item_margin"
-            android:textColor="@color/color_black_content"
-            android:textSize="@dimen/custom_apply_content_text_size" />
-
-        <TextView
-            android:id="@+id/title_reimb_net_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/content_reimb_net_edit"
-            android:layout_below="@id/content_reimb_card_edit"
-            android:text="@string/title_business_travel_reimb_net_pay"
             android:textColor="@color/color_black_title"
             android:textSize="@dimen/custom_apply_title_text_size" />
 
@@ -115,8 +130,8 @@
             android:id="@+id/content_sum_account_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/content_reimb_net_edit"
-            android:layout_below="@id/content_reimb_net_edit"
+            android:layout_alignLeft="@id/content_public_service_reimb_card_pay_edit"
+            android:layout_below="@id/content_public_service_reimb_card_pay_edit"
             android:layout_marginTop="@dimen/custom_apply_item_margin"
             android:text="￥2345"
             android:textColor="@color/colorAccent"
@@ -143,8 +158,10 @@
             android:background="@drawable/bg_next_btn"
             android:gravity="center"
             android:text="@string/btn_next"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/custom_apply_next_btn_text_size"
             android:textStyle="bold" />
+
     </RelativeLayout>
 
 

@@ -4,180 +4,164 @@
     <data>
 
     </data>
-    <ScrollView
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none"
         android:padding="@dimen/custom_activity_padding"
         >
 
-        <RelativeLayout
+        <TextView
+            android:id="@+id/title_public_service_reimb_project_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/content_public_service_reimb_project"
+            android:text="@string/title_public_service_apply_project"
+            android:textColor="@color/color_black_title"
+            android:textSize="@dimen/custom_apply_title_text_size" />
+
+        <EditText
+            android:id="@+id/content_public_service_reimb_project"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/title_public_service_reimb_project_txt"
-                android:textSize="@dimen/custom_apply_title_text_size"
-                android:textColor="@color/color_black_title"
-                android:text="@string/title_public_service_apply_project"
-                android:layout_alignBaseline="@id/content_public_service_reimb_project"
-                />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/apply_title_content_margin"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:layout_toRightOf="@id/title_public_service_reimb_project_txt"
+            android:textSize="@dimen/custom_apply_content_text_size" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/content_public_service_reimb_project"
-                android:layout_marginTop="@dimen/custom_apply_item_margin"
-                android:layout_toRightOf="@id/title_public_service_reimb_project_txt"
-                android:layout_marginLeft="@dimen/apply_title_content_margin"
-                android:textSize="@dimen/custom_apply_content_text_size"
-                />
+        <EditText
+            android:id="@+id/content_public_service_reimb_depart_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/content_public_service_reimb_project"
+            android:layout_below="@id/content_public_service_reimb_project"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:textColor="@color/color_black_content"
+            android:textSize="@dimen/custom_apply_content_text_size" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/content_public_service_reimb_depart_edit"
-                android:layout_below="@id/content_public_service_reimb_project"
-                android:layout_alignLeft="@id/content_public_service_reimb_project"
-                android:textSize="@dimen/custom_apply_content_text_size"
-                android:textColor="@color/color_black_content"
-                android:layout_marginTop="@dimen/custom_apply_item_margin"
-                />
+        <TextView
+            android:id="@+id/title_public_service_apply_depart_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/content_public_service_reimb_depart_edit"
+            android:layout_below="@id/content_public_service_reimb_project"
+            android:text="@string/title_public_service_apply_depart"
+            android:textColor="@color/color_black_title"
+            android:textSize="@dimen/custom_apply_title_text_size" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/title_public_service_apply_depart_txt"
-                android:layout_below="@id/content_public_service_reimb_project"
-                android:layout_alignBaseline="@id/content_public_service_reimb_depart_edit"
-                android:textColor="@color/color_black_title"
-                android:textSize="@dimen/custom_apply_title_text_size"
-                android:text="@string/title_public_service_apply_depart"
-                />
+        <EditText
+            android:id="@+id/content_public_service_reimb_time_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/content_public_service_reimb_depart_edit"
+            android:layout_below="@id/content_public_service_reimb_depart_edit"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:textColor="@color/color_black_content"
+            android:textSize="@dimen/custom_apply_content_text_size" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/content_public_service_reimb_time_edit"
-                android:layout_below="@id/content_public_service_reimb_depart_edit"
-                android:layout_alignLeft="@id/content_public_service_reimb_depart_edit"
-                android:layout_marginTop="@dimen/custom_apply_item_margin"
-                android:textColor="@color/color_black_content"
-                android:textSize="@dimen/custom_apply_content_text_size"
-                />
+        <TextView
+            android:id="@+id/title_public_service_reimb_time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/content_public_service_reimb_time_edit"
+            android:layout_below="@id/content_public_service_reimb_depart_edit"
+            android:text="@string/title_public_service_apply_reception_time"
+            android:textColor="@color/color_black_title"
+            android:textSize="@dimen/custom_apply_title_text_size" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/title_public_service_reimb_time_txt"
-                android:layout_below="@id/content_public_service_reimb_depart_edit"
-                android:layout_alignBaseline="@id/content_public_service_reimb_time_edit"
-                android:textSize="@dimen/custom_apply_title_text_size"
-                android:textColor="@color/color_black_title"
-                android:text="@string/title_public_service_apply_reception_time"
-                />
+        <EditText
+            android:id="@+id/content_public_service_received_depart_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/content_public_service_reimb_time_edit"
+            android:layout_below="@id/content_public_service_reimb_time_edit"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:textColor="@color/color_black_content"
+            android:textSize="@dimen/custom_apply_content_text_size" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/content_public_service_received_depart_edit"
-                android:layout_below="@id/content_public_service_reimb_time_edit"
-                android:layout_alignLeft="@id/content_public_service_reimb_time_edit"
-                android:layout_marginTop="@dimen/custom_apply_item_margin"
-                android:textSize="@dimen/custom_apply_content_text_size"
-                android:textColor="@color/color_black_content"
-                />
+        <TextView
+            android:id="@+id/title_public_service_reimb_received_depart_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/content_public_service_received_depart_edit"
+            android:layout_below="@id/content_public_service_reimb_time_edit"
+            android:text="@string/title_public_service_apply_received_depart"
+            android:textColor="@color/color_black_title"
+            android:textSize="@dimen/custom_apply_title_text_size" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/title_public_service_reimb_received_depart_txt"
-                android:textSize="@dimen/custom_apply_title_text_size"
-                android:textColor="@color/color_black_title"
-                android:layout_below="@id/content_public_service_reimb_time_edit"
-                android:layout_alignBaseline="@id/content_public_service_received_depart_edit"
-                android:text="@string/title_public_service_apply_received_depart"
-                />
+        <EditText
+            android:id="@+id/content_public_service_reimb_reception_address_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/content_public_service_received_depart_edit"
+            android:layout_below="@id/content_public_service_received_depart_edit"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:textColor="@color/color_black_content"
+            android:textSize="@dimen/custom_apply_content_text_size" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/content_public_service_reimb_reception_address_edit"
-                android:layout_below="@id/content_public_service_received_depart_edit"
-                android:layout_alignLeft="@id/content_public_service_received_depart_edit"
-                android:layout_marginTop="@dimen/custom_apply_item_margin"
-                android:textSize="@dimen/custom_apply_content_text_size"
-                android:textColor="@color/color_black_content"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/title_public_service_reimb_reception_address_txt"
-                android:layout_below="@id/content_public_service_received_depart_edit"
-                android:layout_alignBaseline="@id/content_public_service_reimb_reception_address_edit"
-                android:textColor="@color/color_black_title"
-                android:textSize="@dimen/custom_apply_title_text_size"
-                android:text="@string/title_public_service_apply_reception_address"
-                />
+        <TextView
+            android:id="@+id/title_public_service_reimb_reception_address_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/content_public_service_reimb_reception_address_edit"
+            android:layout_below="@id/content_public_service_received_depart_edit"
+            android:text="@string/title_public_service_apply_reception_address"
+            android:textColor="@color/color_black_title"
+            android:textSize="@dimen/custom_apply_title_text_size" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/custom_apply_text_area_height"
-                android:id="@+id/content_public_service_reimb_content_edit"
-                android:layout_below="@id/content_public_service_reimb_reception_address_edit"
-                android:layout_alignLeft="@id/content_public_service_reimb_reception_address_edit"
-                android:layout_marginTop="@dimen/custom_apply_item_margin"
-                android:textSize="@dimen/custom_apply_content_text_size"
-                android:textColor="@color/color_black_content"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/title_public_service_reimb_content_txt"
-                android:layout_below="@id/content_public_service_reimb_reception_address_edit"
-                android:layout_alignBaseline="@id/content_public_service_reimb_content_edit"
-                android:textSize="@dimen/custom_apply_title_text_size"
-                android:textColor="@color/color_black_title"
-                android:text="@string/title_public_service_apply_reception_content"
-                />
+        <EditText
+            android:id="@+id/content_public_service_reimb_content_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_apply_text_area_height"
+            android:layout_alignLeft="@id/content_public_service_reimb_reception_address_edit"
+            android:layout_below="@id/content_public_service_reimb_reception_address_edit"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:textColor="@color/color_black_content"
+            android:textSize="@dimen/custom_apply_content_text_size" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/custom_apply_text_area_height"
-                android:id="@+id/content_public_service_reimb_basis_edit"
-                android:layout_below="@id/content_public_service_reimb_content_edit"
-                android:layout_alignLeft="@id/content_public_service_reimb_content_edit"
-                android:layout_marginTop="@dimen/custom_apply_item_margin"
-                android:textSize="@dimen/custom_apply_content_text_size"
-                android:textColor="@color/color_black_content"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/content_public_service_reimb_content_edit"
-                android:layout_alignBaseline="@id/content_public_service_reimb_basis_edit"
-                android:textSize="@dimen/custom_apply_title_text_size"
-                android:textColor="@color/color_black_title"
-                android:text="@string/title_public_service_apply_reception_basis"
-                />
+        <TextView
+            android:id="@+id/title_public_service_reimb_content_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/content_public_service_reimb_content_edit"
+            android:layout_below="@id/content_public_service_reimb_reception_address_edit"
+            android:text="@string/title_public_service_apply_reception_content"
+            android:textColor="@color/color_black_title"
+            android:textSize="@dimen/custom_apply_title_text_size" />
 
-            <TextView
-                android:layout_width="@dimen/custom_apply_next_btn_width"
-                android:layout_height="@dimen/custom_apply_next_btn_height"
-                android:id="@+id/next_btn"
-                android:layout_below="@id/content_public_service_reimb_basis_edit"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="@dimen/custom_apply_btn_item_margin"
-                android:textSize="@dimen/custom_apply_next_btn_text_size"
-                android:textColor="@android:color/black"
-                android:textStyle="bold"
-                android:text="@string/btn_next"
-                android:gravity="center"
-                android:background="@drawable/bg_next_btn"
-                />
-        </RelativeLayout>
-    </ScrollView>
+        <EditText
+            android:id="@+id/content_public_service_reimb_basis_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_apply_text_area_height"
+            android:layout_alignLeft="@id/content_public_service_reimb_content_edit"
+            android:layout_below="@id/content_public_service_reimb_content_edit"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:textColor="@color/color_black_content"
+            android:textSize="@dimen/custom_apply_content_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/content_public_service_reimb_basis_edit"
+            android:layout_below="@id/content_public_service_reimb_content_edit"
+            android:text="@string/title_public_service_apply_reception_basis"
+            android:textColor="@color/color_black_title"
+            android:textSize="@dimen/custom_apply_title_text_size" />
+
+        <TextView
+            android:id="@+id/next_btn"
+            android:layout_width="@dimen/custom_apply_next_btn_width"
+            android:layout_height="@dimen/custom_apply_next_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/content_public_service_reimb_basis_edit"
+            android:layout_marginTop="@dimen/custom_apply_btn_item_margin"
+            android:background="@drawable/bg_next_btn"
+            android:gravity="center"
+            android:text="@string/btn_next"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/custom_apply_next_btn_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
 
 </layout>

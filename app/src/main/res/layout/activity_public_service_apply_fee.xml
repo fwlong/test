@@ -12,30 +12,30 @@
         >
 
         <TextView
-            android:id="@+id/title_apply_address_start_txt"
+            android:id="@+id/title_public_service_apply_guest_count_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/content_apply_address_start_edit"
-            android:text="@string/title_business_travel_apply_address_start"
+            android:layout_alignBaseline="@id/content_public_service_apply_guest_count_edit"
+            android:text="@string/title_public_service_apply_guest_count"
             android:textColor="@color/color_black_title"
             android:textSize="@dimen/custom_apply_title_text_size" />
 
         <EditText
-            android:id="@+id/content_apply_address_start_edit"
+            android:id="@+id/content_public_service_apply_guest_count_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/apply_title_content_margin"
             android:layout_marginTop="@dimen/custom_apply_item_margin"
-            android:layout_toRightOf="@id/title_apply_address_start_txt"
+            android:layout_toRightOf="@id/title_public_service_apply_guest_count_txt"
             android:textColor="@color/color_black_content"
             android:textSize="@dimen/custom_apply_content_text_size" />
 
         <EditText
-            android:id="@+id/content_address_way_edit"
+            android:id="@+id/content_public_service_apply_accompany_count_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/content_apply_address_start_edit"
-            android:layout_below="@id/content_apply_address_start_edit"
+            android:layout_alignLeft="@id/content_public_service_apply_guest_count_edit"
+            android:layout_below="@id/content_public_service_apply_guest_count_edit"
             android:layout_marginTop="@dimen/custom_apply_item_margin"
             android:textColor="@color/color_black_content"
             android:textSize="@dimen/custom_apply_content_text_size" />
@@ -43,118 +43,118 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/content_address_way_edit"
-            android:layout_below="@id/content_apply_address_start_edit"
-            android:text="@string/title_business_travel_apply_address_way"
+            android:layout_alignBaseline="@id/content_public_service_apply_accompany_count_edit"
+            android:layout_below="@id/content_public_service_apply_guest_count_edit"
+            android:text="@string/title_public_service_apply_accompany_count"
             android:textColor="@color/color_black_title"
             android:textSize="@dimen/custom_apply_title_text_size" />
 
         <EditText
-            android:id="@+id/content_address_end_edit"
+            android:id="@+id/content_public_service_apply_eating_count_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/content_address_way_edit"
-            android:layout_below="@id/content_address_way_edit"
+            android:layout_alignLeft="@id/content_public_service_apply_accompany_count_edit"
+            android:layout_below="@id/content_public_service_apply_accompany_count_edit"
             android:layout_marginTop="@dimen/custom_apply_item_margin"
             android:textColor="@color/color_black_content"
             android:textSize="@dimen/custom_apply_content_text_size" />
 
         <TextView
-            android:id="@+id/title_apply_address_end_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/content_address_end_edit"
-            android:layout_below="@id/content_address_way_edit"
-            android:text="@string/title_business_travel_apply_address_end"
+            android:layout_alignBaseline="@id/content_public_service_apply_eating_count_edit"
+            android:layout_below="@id/content_public_service_apply_accompany_count_edit"
+            android:text="@string/title_public_service_apply_eating_count"
             android:textColor="@color/color_black_title"
             android:textSize="@dimen/custom_apply_title_text_size" />
 
         <EditText
-            android:id="@+id/content_vehicle_begin_edit"
+            android:id="@+id/content_public_service_apply_dining_standards_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/content_address_end_edit"
-            android:layout_below="@id/content_address_end_edit"
+            android:layout_alignLeft="@id/content_public_service_apply_eating_count_edit"
+            android:layout_below="@id/content_public_service_apply_eating_count_edit"
             android:layout_marginTop="@dimen/custom_apply_item_margin"
             android:textColor="@color/color_black_content"
             android:textSize="@dimen/custom_apply_content_text_size" />
 
         <TextView
-            android:id="@+id/title_vehicle_begin_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/content_vehicle_begin_edit"
-            android:layout_below="@id/content_address_end_edit"
-            android:text="@string/title_business_travel_apply_vehicle_go"
+            android:layout_alignBaseline="@id/content_public_service_apply_dining_standards_edit"
+            android:layout_below="@id/content_public_service_apply_eating_count_edit"
+            android:text="@string/title_public_service_apply_dining_standards"
             android:textColor="@color/color_black_title"
             android:textSize="@dimen/custom_apply_title_text_size" />
 
         <EditText
-            android:id="@+id/content_vehicle_end_edit"
+            android:id="@+id/content_public_service_apply_stay_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/content_vehicle_begin_edit"
-            android:layout_below="@id/content_vehicle_begin_edit"
+            android:layout_alignLeft="@id/content_public_service_apply_dining_standards_edit"
+            android:layout_below="@id/content_public_service_apply_dining_standards_edit"
             android:layout_marginTop="@dimen/custom_apply_item_margin"
             android:textColor="@color/color_black_content"
             android:textSize="@dimen/custom_apply_content_text_size" />
 
         <TextView
-            android:id="@+id/title_vehicle_end_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/content_vehicle_end_edit"
-            android:layout_below="@id/content_vehicle_begin_edit"
-            android:text="@string/title_business_travel_apply_vehicle_back"
+            android:layout_alignBaseline="@id/content_public_service_apply_stay_edit"
+            android:layout_below="@id/content_public_service_apply_dining_standards_edit"
+            android:text="@string/title_public_service_apply_stay_fee"
             android:textColor="@color/color_black_title"
             android:textSize="@dimen/custom_apply_title_text_size" />
 
         <EditText
-            android:id="@+id/content_apply_time_begin_edit"
+            android:id="@+id/content_public_service_apply_other_fee_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/content_vehicle_end_edit"
-            android:layout_below="@id/content_vehicle_end_edit"
+            android:layout_alignLeft="@id/content_public_service_apply_stay_edit"
+            android:layout_below="@id/content_public_service_apply_stay_edit"
             android:layout_marginTop="@dimen/custom_apply_item_margin"
             android:textColor="@color/color_black_content"
             android:textSize="@dimen/custom_apply_content_text_size" />
 
         <TextView
-            android:id="@+id/title_apply_time_begin_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/content_apply_time_begin_edit"
-            android:layout_below="@id/content_vehicle_end_edit"
-            android:text="@string/title_business_travel_apply_time_begin"
+            android:layout_alignBaseline="@id/content_public_service_apply_other_fee_edit"
+            android:layout_below="@id/content_public_service_apply_stay_edit"
+            android:text="@string/title_public_service_apply_other_fee"
             android:textColor="@color/color_black_title"
             android:textSize="@dimen/custom_apply_title_text_size" />
 
-        <EditText
-            android:id="@+id/content_apply_time_end_edit"
+        <View
+            android:id="@+id/divider"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/content_apply_time_begin_edit"
-            android:layout_below="@id/content_apply_time_begin_edit"
+            android:layout_height="@dimen/custom_apply_item_margin"
+            android:layout_below="@id/content_public_service_apply_other_fee_edit"
             android:layout_marginTop="@dimen/custom_apply_item_margin"
-            android:textColor="@color/color_black_content"
-            android:textSize="@dimen/custom_apply_content_text_size" />
+            android:background="@android:color/white" />
 
         <TextView
-            android:id="@+id/title_apply_time_end_txt"
+            android:id="@+id/title_public_service_apply_over_standards_fee_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@id/content_apply_time_end_edit"
-            android:layout_below="@id/content_apply_time_begin_edit"
-            android:text="@string/title_business_travel_apply_time_end"
+            android:layout_below="@id/divider"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:text="@string/title_public_service_apply_over_standards_fee"
             android:textColor="@color/color_black_title"
             android:textSize="@dimen/custom_apply_title_text_size" />
 
+        <Switch
+            android:id="@+id/switch_over_standards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/title_public_service_apply_over_standards_fee_txt"
+            android:layout_alignParentRight="true" />
+
         <TextView
-            android:id="@+id/next_btn"
             android:layout_width="@dimen/custom_apply_next_btn_width"
             android:layout_height="@dimen/custom_apply_next_btn_height"
             android:layout_alignParentRight="true"
-            android:layout_below="@id/content_apply_time_end_edit"
+            android:layout_below="@id/switch_over_standards"
             android:layout_marginTop="@dimen/custom_apply_btn_item_margin"
             android:background="@drawable/bg_next_btn"
             android:gravity="center"
@@ -163,7 +163,7 @@
             android:textSize="@dimen/custom_apply_next_btn_text_size"
             android:textStyle="bold" />
 
-
     </RelativeLayout>
+
 
 </layout>

@@ -47,7 +47,9 @@
 
     <string name="title_public_service_apply_dining_standards">就餐标准:</string>
     <string name="title_public_service_apply_stay_fee">住宿费:&#160;&#160;</string>
-    <string name="title_public_servicec_apply_other_fee">其他费用:</string>
+    <string name="title_public_service_apply_other_fee">其他费用:</string>
+
+    <string name="title_public_service_apply_over_standards_fee">超标准接待:</string>
 
     <string name="btn_next">下一步</string>
 
