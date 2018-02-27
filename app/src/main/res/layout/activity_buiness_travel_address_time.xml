@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/custom_activity_padding"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_business_travel_reimb_address_begin_txt"
+            android:textSize="@dimen/custom_apply_title_text_size"
+            android:textColor="@color/color_black_title"
+            android:text="@string/title_business_travel_reimb_address_begin"
+            android:layout_alignBaseline="@id/content_business_travel_reimb_address_begin_edit"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content_business_travel_reimb_address_begin_edit"
+            android:layout_toRightOf="@id/title_business_travel_reimb_address_begin_txt"
+            android:layout_marginLeft="@dimen/apply_title_content_margin"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:textColor="@color/color_black_content"
+            android:textSize="@dimen/custom_apply_content_text_size"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content_business_travel_reimb_address_end_edit"
+            android:layout_below="@id/content_business_travel_reimb_address_begin_edit"
+            android:layout_alignLeft="@id/content_business_travel_reimb_address_begin_edit"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:textColor="@color/color_black_content"
+            android:textSize="@dimen/custom_apply_content_text_size"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_business_travel_reimb_address_begin_edit"
+            android:layout_alignBaseline="@id/content_business_travel_reimb_address_end_edit"
+            android:textSize="@dimen/custom_apply_title_text_size"
+            android:textColor="@color/color_black_title"
+            android:text="@string/title_business_travel_reimb_address_end"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content_business_travel_reimb_time_begin_edit"
+            android:layout_below="@id/content_business_travel_reimb_address_end_edit"
+            android:layout_alignLeft="@id/content_business_travel_reimb_address_end_edit"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:textColor="@color/color_black_content"
+            android:textSize="@dimen/custom_apply_content_text_size"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_business_travel_reimb_address_end_edit"
+            android:layout_alignBaseline="@id/content_business_travel_reimb_time_begin_edit"
+            android:textSize="@dimen/custom_apply_title_text_size"
+            android:textColor="@color/color_black_title"
+            android:text="@string/title_business_travel_apply_time_begin"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content_business_travel_reimb_time_end_edit"
+            android:layout_below="@id/content_business_travel_reimb_time_begin_edit"
+            android:layout_alignLeft="@id/content_business_travel_reimb_time_begin_edit"
+            android:layout_marginTop="@dimen/custom_apply_item_margin"
+            android:textColor="@color/color_black_content"
+            android:textSize="@dimen/custom_apply_content_text_size"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_business_travel_reimb_time_begin_edit"
+            android:layout_alignBaseline="@id/content_business_travel_reimb_time_end_edit"
+            android:textSize="@dimen/custom_apply_title_text_size"
+            android:textColor="@color/color_black_title"
+            android:text="@string/title_business_travel_apply_time_end"
+            />
+
+
+        <TextView
+            android:id="@+id/next_btn"
+            android:layout_width="@dimen/custom_apply_next_btn_width"
+            android:layout_height="@dimen/custom_apply_next_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/content_business_travel_reimb_time_end_edit"
+            android:layout_marginTop="@dimen/custom_apply_btn_item_margin"
+            android:background="@drawable/bg_next_btn"
+            android:gravity="center"
+            android:text="@string/btn_next"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/custom_apply_title_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</layout>

@@ -29,6 +29,14 @@
     <string name="title_business_travel_reimb_card_pay">公务卡支付:</string>
     <string name="title_business_travel_reimb_net_pay">网银支付:</string>
     <string name="title_business_travel_reimb_sum_acount">报销总额:</string>
+    <string name="title_business_travel_reimb_address_begin">开始地点:</string>
+    <string name="title_business_travel_reimb_address_end">结束地点:</string>
+    
+    <string name="title_business_travel_reimb_fee_traffic">车船费</string>
+    <string name="title_business_travel_reimb_fee_stay">住宿费</string>
+    <string name="title_business_travel_reimb_fee_meals">伙食补助</string>
+    <string name="title_business_travel_reimb_fee_traffic_in_city">市内交通补助</string>
+    <string name="title_business_travel_reimb_fee_other">其他费用</string>
 
 
     <string name="title_public_service_apply_project">所属项目:</string>
@@ -50,6 +58,7 @@
     <string name="title_public_service_apply_other_fee">其他费用:</string>
 
     <string name="title_public_service_apply_over_standards_fee">超标准接待:</string>
+    
 
     <string name="btn_next">下一步</string>
 
