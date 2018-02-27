@@ -129,7 +129,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/content_sum_account_txt"
             android:layout_below="@id/content_reimb_net_edit"
-            android:text="@string/title_business_travel_reimb_sum_acount"
+            android:text="@string/title_business_travel_reimb_sum_account"
             android:textColor="@color/color_black_title"
             android:textSize="@dimen/custom_apply_title_text_size" />
 

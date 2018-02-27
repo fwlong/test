@@ -28,7 +28,7 @@
     <string name="title_business_travel_reimb_transfer_account">转账支付:</string>
     <string name="title_business_travel_reimb_card_pay">公务卡支付:</string>
     <string name="title_business_travel_reimb_net_pay">网银支付:</string>
-    <string name="title_business_travel_reimb_sum_acount">报销总额:</string>
+    <string name="title_business_travel_reimb_sum_account">报销总额:</string>
     <string name="title_business_travel_reimb_address_begin">开始地点:</string>
     <string name="title_business_travel_reimb_address_end">结束地点:</string>
     
@@ -60,6 +60,15 @@
     <string name="title_public_service_apply_over_standards_fee">超标准接待:</string>
     
 
+    <string name="personal_info_name">姓名:&#160;&#160;%1$s</string>
+    <string name="personal_info_duties">职务:&#160;&#160;%1$s</string>
+    <string name="personal_info_depart">所属科室:&#160;&#160;%1$s</string>
+    
+    <string name="mine_item_setting">设置</string>
+    <string name="mine_item_version">版本信息</string>
+    <string name="mine_item_logout">退出</string>
+
     <string name="btn_next">下一步</string>
+    <string name="btn_confirm">确定</string>
 
 </resources>
