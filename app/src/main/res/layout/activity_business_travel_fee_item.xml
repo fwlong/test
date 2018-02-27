@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--车船费	人数，天数-->
+    <!--住宿费	天数，单价，金额-->
+    <!--伙食补助	人数，天数，金额-->
+    <!--室内交通补助	人数，天数，金额-->
+    <!--其他费用	名称，金额-->
+
+
+</layout>
