@@ -19,13 +19,8 @@ public class MainViewModel extends BaseViewModel {
 
 
 
-    public MainViewModel(Context context) {
+    public MainViewModel(MainActivity context) {
         super(context);
-    }
-
-    @Override
-    public void refreshView(View view) {
-
     }
 
 

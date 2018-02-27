@@ -1,17 +1,16 @@
 package cn.jsjst.reimbursement.component.applylist;
 
-import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import cn.jsjst.reimbursement.R;
+import cn.jsjst.reimbursement.component.base.BaseFragment;
 import cn.jsjst.reimbursement.databinding.FragmentApplyListBinding;
 
 /**
@@ -22,7 +21,7 @@ import cn.jsjst.reimbursement.databinding.FragmentApplyListBinding;
  * @see [相关类]
  * @since [模块]
  */
-public class ApplyListFragment extends Fragment {
+public class ApplyListFragment extends BaseFragment {
 
     FragmentApplyListBinding mFragmentApplyListBinding;
     ApplyModel mApplyModel;

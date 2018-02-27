@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import cn.jsjst.reimbursement.R;
+import cn.jsjst.reimbursement.component.base.BaseFragment;
 
 /**
  * 类说明
@@ -17,7 +18,7 @@ import cn.jsjst.reimbursement.R;
  * @see [相关类]
  * @since [模块]
  */
-public class SubApplyFragment extends Fragment {
+public class SubApplyFragment extends BaseFragment {
 
     @Nullable
     @Override

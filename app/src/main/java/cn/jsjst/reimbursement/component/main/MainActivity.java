@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import cn.jsjst.reimbursement.R;
+import cn.jsjst.reimbursement.component.base.BaseActivity;
 import cn.jsjst.reimbursement.component.base.FragmentHelper;
 import cn.jsjst.reimbursement.component.base.NavModel;
 import cn.jsjst.reimbursement.databinding.ActivityMainBinding;
@@ -18,7 +19,7 @@ import cn.jsjst.reimbursement.databinding.ActivityMainBinding;
  * @see [相关类]
  * @since [模块]
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private String mCurrentTab = FragmentHelper.TAG_HOME;
     private MainViewModel mMainViewModel;

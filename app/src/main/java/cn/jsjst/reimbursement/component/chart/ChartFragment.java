@@ -2,12 +2,12 @@ package cn.jsjst.reimbursement.component.chart;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import cn.jsjst.reimbursement.R;
+import cn.jsjst.reimbursement.component.base.BaseFragment;
 
 /**
  * 类说明
@@ -17,7 +17,7 @@ import cn.jsjst.reimbursement.R;
  * @see [相关类]
  * @since [模块]
  */
-public class ChartFragment extends Fragment {
+public class ChartFragment extends BaseFragment {
 
     @Nullable
     @Override

@@ -22,7 +22,7 @@ public class ToolbarViewModel {
         mListener = listener;
     }
 
-    ObservableField<String> title = new ObservableField<>();
+    public ObservableField<String> title = new ObservableField<>();
 
     public void setEventListener(ToolbarEventListener listener){
         mListener = listener;
