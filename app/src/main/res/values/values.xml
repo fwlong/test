@@ -43,4 +43,20 @@
 
 
     <dimen name="apply_title_content_margin">15dp</dimen>
+
+    <!--我的页面-->
+    <dimen name="personal_info_layout_height">170dp</dimen>
+    <dimen name="personal_header_size">60dp</dimen>
+    <dimen name="personal_header_margin_top">25dp</dimen>
+    <dimen name="personal_info_header_margin">24dp</dimen>
+    <dimen name="personal_info_inner_margin">10dp</dimen>
+    <dimen name="personal_info_text_size">13dp</dimen>
+    <dimen name="personal_info_horizontal_margin">50dp</dimen>
+    <dimen name="setting_personal_margin">35dp</dimen>
+    <dimen name="setting_item_height">40dp</dimen>
+    <dimen name="setting_item_margin_horizontal">20dp</dimen>
+    <dimen name="setting_item_padding">10dp</dimen>
+    <dimen name="setting_item_inner_padding">15dp</dimen>
+    <dimen name="setting_item_text_size">13dp</dimen>
+    <dimen name="setting_item_height_divider">1dp</dimen>
 </resources>

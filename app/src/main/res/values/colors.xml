@@ -11,4 +11,6 @@
 
     <color name="color_disable">#eaeaea</color>
 
+    <color name="color_window_bg">#fefefe</color>
+
 </resources>

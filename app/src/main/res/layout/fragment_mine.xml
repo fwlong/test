@@ -1,13 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_info_layout_height"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="@dimen/personal_info_horizontal_margin"
+        android:paddingRight="@dimen/personal_info_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/personal_header_img"
+            android:layout_width="@dimen/personal_header_size"
+            android:layout_height="@dimen/personal_header_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/personal_header_margin_top" />
+
+        <TextView
+            android:id="@+id/personal_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/personal_header_img"
+            android:layout_marginTop="@dimen/personal_info_header_margin"
+            android:text="@string/personal_info_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/personal_info_text_size" />
+
+        <TextView
+            android:id="@+id/personal_duties_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/personal_name_txt"
+            android:layout_alignParentRight="true"
+            android:text="@string/personal_info_duties"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/personal_info_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/personal_name_txt"
+            android:layout_marginTop="@dimen/personal_info_inner_margin"
+            android:text="@string/personal_info_depart"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/personal_info_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="this is mine fragment"
-        />
+        android:layout_marginTop="@dimen/setting_personal_margin"
+        android:divider="@drawable/divider_gradient"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle|end"
+        android:paddingLeft="@dimen/setting_item_margin_horizontal"
+        android:paddingRight="@dimen/setting_item_margin_horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/setting_item_text_size"
+            android:textColor="@color/color_black_title"
+            android:paddingLeft="@dimen/setting_item_padding"
+            android:text="@string/mine_item_setting"
+            android:drawableLeft="@drawable/ic_settings_black"
+            android:drawablePadding="@dimen/setting_item_inner_padding"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/setting_item_text_size"
+            android:textColor="@color/color_black_title"
+            android:paddingLeft="@dimen/setting_item_padding"
+            android:text="@string/mine_item_version"
+            android:drawableLeft="@drawable/ic_help_black"
+            android:drawablePadding="@dimen/setting_item_inner_padding"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/setting_item_text_size"
+            android:textColor="@color/color_black_title"
+            android:paddingLeft="@dimen/setting_item_padding"
+            android:text="@string/mine_item_logout"
+            android:drawableLeft="@drawable/ic_exit_to_app"
+            android:drawablePadding="@dimen/setting_item_inner_padding"
+            />
+
+    </LinearLayout>
 
 </LinearLayout>
