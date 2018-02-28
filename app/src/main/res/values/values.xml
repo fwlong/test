@@ -36,6 +36,10 @@
     <dimen name="custom_apply_next_btn_text_size">16dp</dimen>
     <dimen name="custom_apply_next_btn_bg_corner">5dp</dimen>
     <dimen name="custom_reimb_amount_text_size">18dp</dimen>
+    <dimen name="custom_reimb_serial_number_tip_text_size">10dp</dimen>
+
+    <dimen name="title_tip_txt_padding_vertical">10dp</dimen>
+    <dimen name="tip_content_margin">5dp</dimen>
 
 
     <dimen name="apply_title_content_margin">15dp</dimen>
