@@ -37,6 +37,21 @@
     <string name="title_business_travel_reimb_fee_meals">伙食补助</string>
     <string name="title_business_travel_reimb_fee_traffic_in_city">市内交通补助</string>
     <string name="title_business_travel_reimb_fee_other">其他费用</string>
+    
+    <string name="title_meals_stay_by_self">食宿自理</string>
+    <string name="title_meeting_attend">参加会议</string>
+    <string name="title_train_attend">参加培训</string>
+    <string name="title_fee_by_depart">负责部门承担费用</string>
+    
+    <string name="title_meeting_class">会议类型:</string>
+    <string name="title_meeting_name">会议名称:</string>
+    <string name="title_train_class">培训名称:</string>
+    <string name="title_train_name">会议名称:</string>
+    
+    <string name="title_amount_pre_pay">预付款:</string>
+    <string name="title_unit_received">收款单位:</string>
+    <string name="title_account_number">账号:&#160;&#160;&#160;&#160;</string>
+    <string name="title_bank_for_card">开户行:&#160;&#160;</string>
 
     <string name="fee_item_person_count">人数:&#160;&#160;&#160;&#160;</string>
     <string name="fee_item_day_count">天数:&#160;&#160;&#160;&#160;</string>
