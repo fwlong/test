@@ -1,7 +1,11 @@
 package cn.jsjst.reimbursement.component.base;
 
+import android.databinding.ObservableBoolean;
 import android.databinding.ObservableField;
+import android.databinding.ObservableInt;
 import android.view.View;
+
+import cn.jsjst.reimbursement.R;
 
 /**
  * 类说明
@@ -23,6 +27,9 @@ public class ToolbarViewModel {
     }
 
     public ObservableField<String> title = new ObservableField<>();
+    public ObservableBoolean showBackIcon = new ObservableBoolean();
+    public ObservableBoolean showRightMenuIcon = new ObservableBoolean();
+    public ObservableInt menuIconId = new ObservableInt(R.drawable.menu_qr_code);
 
     public void setEventListener(ToolbarEventListener listener){
         mListener = listener;

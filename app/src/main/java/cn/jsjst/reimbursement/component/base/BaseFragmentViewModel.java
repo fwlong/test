@@ -12,9 +12,11 @@ import android.view.View;
  * @see [相关类]
  * @since [模块]
  */
-public class BaseFragmentViewModel<T extends Fragment> {
+public abstract class BaseFragmentViewModel<T extends Fragment> {
 
     public T mFragment;
+
+    public final ToolbarViewModel mToolbarViewModel = new ToolbarViewModel();
 
     public ObservableField<Boolean> isEmpty = new ObservableField<>(false);
 
@@ -23,6 +25,29 @@ public class BaseFragmentViewModel<T extends Fragment> {
 
     public BaseFragmentViewModel(T context) {
         mFragment = context;
+    }
+
+
+    private void initToolbar(){
+        mToolbarViewModel.setEventListener(new ToolbarEventListener() {
+            @Override
+            public void onBackEvent(View view) {
+                onLeftIconClick();
+            }
+
+            @Override
+            public void onRightMenuEvent(View view) {
+                onRightIconClick(view);
+            }
+        });
+        mToolbarViewModel.title.set(getPageTitle());
+        mToolbarViewModel.showBackIcon.set(showBackIcon());
+        mToolbarViewModel.showRightMenuIcon.set(showMenuIcon());
+        if(getMenuIcon()<=0){
+            mToolbarViewModel.showRightMenuIcon.set(false);
+        }else{
+            mToolbarViewModel.menuIconId.set(getMenuIcon());
+        }
     }
 
     /**
@@ -39,5 +64,23 @@ public class BaseFragmentViewModel<T extends Fragment> {
     }
 
     public void onDestory() {
+    }
+
+    /**
+     * 标题栏设置
+     */
+
+    public abstract String getPageTitle();
+
+    public abstract Boolean showBackIcon();
+
+    public abstract Boolean showMenuIcon();
+
+    public abstract int getMenuIcon();
+
+    public void onLeftIconClick() {
+    }
+
+    public void onRightIconClick(View view) {
     }
 }

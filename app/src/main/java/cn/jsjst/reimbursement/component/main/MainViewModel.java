@@ -23,5 +23,23 @@ public class MainViewModel extends BaseViewModel {
         super(context);
     }
 
+    @Override
+    public String getPageTitle() {
+        return null;
+    }
 
+    @Override
+    public boolean showBackIcon() {
+        return false;
+    }
+
+    @Override
+    public boolean showMenuIcon() {
+        return false;
+    }
+
+    @Override
+    public int getMenuIcon() {
+        return 0;
+    }
 }

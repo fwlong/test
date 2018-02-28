@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:img="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    >
 
     <data>
-        <variable
-            name="toolbarModel"
-            type="cn.jsjst.reimbursement.component.base.ToolbarViewModel"/>
+        <!--<import type="android.view.View"/>-->
+        <!--<variable-->
+            <!--name="toolbarModel"-->
+            <!--type="cn.jsjst.reimbursement.component.base.ToolbarViewModel"/>-->
     </data>
 
     <RelativeLayout
@@ -13,7 +17,7 @@
         android:background="@android:color/white"
         >
 
-        <ImageButton
+        <ImageView
             android:id="@+id/toolbar_back_imgbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,8 +27,9 @@
             android:paddingTop="@dimen/toolbar_img_padding_vertical"
             android:paddingBottom="@dimen/toolbar_img_padding_vertical"
             android:src="@drawable/back_arrow_black"
-            android:onClick="@{toolbarModel::onBackEvent}"
             />
+        <!--android:onClick="@{toolbarModel::onBackEvent}"-->
+        <!--android:visibility="@{toolbarModel.showBackIcon?View.VISIBLE:View.GONE}"-->
 
         <TextView
             android:id="@+id/title_txt"
@@ -39,8 +44,9 @@
             android:minHeight="@dimen/toolbar_title_text_min_height"
             android:paddingLeft="@dimen/toolbar_title_padding_horizontal"
             android:paddingRight="@dimen/toolbar_title_padding_horizontal"
-            android:text="@{toolbarModel.title}"
-            />
+            tool:text="this is title"
+        />
+        <!--android:text="@{toolbarModel.title}"-->
 
         <ImageView
             android:id="@+id/operate_img"
@@ -53,9 +59,11 @@
             android:paddingLeft="@dimen/toolbar_img_padding_right"
             android:paddingRight="@dimen/toolbar_img_padding_left"
             android:layout_alignParentRight="true"
-            android:src="@drawable/menu_qr_code"
-            android:onClick="@{toolbarModel::onRightMenuEvent}"
+            tool:src="@drawable/menu_qr_code"
             />
+        <!--img:src="@{toolbarModel.menuIconId}"-->
+        <!--android:onClick="@{toolbarModel::onRightMenuEvent}"-->
+        <!--android:visibility="@{toolbarModel.showRightMenuIcon?View.VISIBLE:View.GONE}"-->
     </RelativeLayout>
 
 </layout>

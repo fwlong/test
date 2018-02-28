@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:img="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    >
+    <data>
+        
+    </data>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="@dimen/account_table_img_size"
+            android:layout_height="@dimen/account_table_img_size"
+            android:layout_gravity="center_horizontal"
+            />
+        <!--img:imgurl="@{}"-->
+        <!--img:error="@{@drawable/ic_launcher}"-->
+        <!--img:placeholder="@{@drawable/ic_launcher}"-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/account_table_img_txt_margin"
+            android:textSize="@dimen/account_table_txt_size"
+            android:textColor="@color/color_black_title"
+            tool:text="测试标题"
+            />
+        
+        
+    </LinearLayout>
+</layout>

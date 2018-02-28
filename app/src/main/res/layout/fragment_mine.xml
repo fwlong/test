@@ -4,6 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
+    <include layout="@layout/title_bar_layout" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/personal_info_layout_height"
@@ -54,44 +57,42 @@
         android:layout_marginTop="@dimen/setting_personal_margin"
         android:divider="@drawable/divider_gradient"
         android:orientation="vertical"
-        android:showDividers="beginning|middle|end"
         android:paddingLeft="@dimen/setting_item_margin_horizontal"
         android:paddingRight="@dimen/setting_item_margin_horizontal"
-        >
+        android:showDividers="beginning|middle|end">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/setting_item_height"
-            android:gravity="center_vertical"
-            android:textSize="@dimen/setting_item_text_size"
-            android:textColor="@color/color_black_title"
-            android:paddingLeft="@dimen/setting_item_padding"
-            android:text="@string/mine_item_setting"
             android:drawableLeft="@drawable/ic_settings_black"
             android:drawablePadding="@dimen/setting_item_inner_padding"
-            />
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/setting_item_padding"
+            android:text="@string/mine_item_setting"
+            android:textColor="@color/color_black_title"
+            android:textSize="@dimen/setting_item_text_size" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/setting_item_height"
-            android:gravity="center_vertical"
-            android:textSize="@dimen/setting_item_text_size"
-            android:textColor="@color/color_black_title"
-            android:paddingLeft="@dimen/setting_item_padding"
-            android:text="@string/mine_item_version"
             android:drawableLeft="@drawable/ic_help_black"
             android:drawablePadding="@dimen/setting_item_inner_padding"
-            />
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/setting_item_padding"
+            android:text="@string/mine_item_version"
+            android:textColor="@color/color_black_title"
+            android:textSize="@dimen/setting_item_text_size" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/setting_item_height"
-            android:gravity="center_vertical"
-            android:textSize="@dimen/setting_item_text_size"
-            android:textColor="@color/color_black_title"
-            android:paddingLeft="@dimen/setting_item_padding"
-            android:text="@string/mine_item_logout"
             android:drawableLeft="@drawable/ic_exit_to_app"
             android:drawablePadding="@dimen/setting_item_inner_padding"
-            />
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/setting_item_padding"
+            android:text="@string/mine_item_logout"
+            android:textColor="@color/color_black_title"
+            android:textSize="@dimen/setting_item_text_size" />
 
     </LinearLayout>
 

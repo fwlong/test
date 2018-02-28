@@ -30,7 +30,7 @@ public class ImageBinding {
 
 
 
-    @BindingAdapter("android:src")
+    @BindingAdapter("img:src")
     public static void setSrc(ImageView imageView,int resId){
         imageView.setImageResource(resId);
     }

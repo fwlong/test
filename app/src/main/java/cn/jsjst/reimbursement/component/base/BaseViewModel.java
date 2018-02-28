@@ -12,18 +12,42 @@ import android.view.View;
  * @see [相关类]
  * @since [模块]
  */
-public class BaseViewModel<T extends BaseActivity> {
+public abstract class BaseViewModel<T extends BaseActivity> {
 
     public T mActivity;
+
+    public final ToolbarViewModel mToolbarViewModel = new ToolbarViewModel();
 
     public ObservableField<Boolean> isEmpty = new ObservableField<>(false);
 
     public ObservableField<Boolean> isNetError = new ObservableField<>(false);
 
 
-
-    public BaseViewModel(T context){
+    public BaseViewModel(T context) {
         mActivity = context;
+        initToolbar();
+    }
+
+    private void initToolbar(){
+        mToolbarViewModel.setEventListener(new ToolbarEventListener() {
+            @Override
+            public void onBackEvent(View view) {
+                onLeftIconClick();
+            }
+
+            @Override
+            public void onRightMenuEvent(View view) {
+                onRightIconClick(view);
+            }
+        });
+        mToolbarViewModel.title.set(getPageTitle());
+        mToolbarViewModel.showBackIcon.set(showBackIcon());
+        mToolbarViewModel.showRightMenuIcon.set(showMenuIcon());
+        if(getMenuIcon()<=0){
+            mToolbarViewModel.showRightMenuIcon.set(false);
+        }else{
+            mToolbarViewModel.menuIconId.set(getMenuIcon());
+        }
     }
 
 
@@ -31,12 +55,31 @@ public class BaseViewModel<T extends BaseActivity> {
      * 周期函数，在activity，fragment里调用
      */
 
-    public void onCreate(){}
+    public void onCreate() {
+    }
 
-    public void onStart(){}
+    public void onStart() {
+    }
 
-    public void onStop(){}
+    public void onStop() {
+    }
 
-    public void onDestory(){}
+    public void onDestory() {
+    }
+
+    public abstract String getPageTitle();
+
+    public abstract boolean showBackIcon();
+
+    public abstract boolean showMenuIcon();
+
+    public abstract int getMenuIcon();
+
+    public void onLeftIconClick() {
+    }
+
+    public void onRightIconClick(View view) {
+    }
+
 
 }

@@ -5,7 +5,7 @@
     <dimen name="toolbar_img_padding_right">10dp</dimen>
     <dimen name="toolbar_img_padding_vertical">5dp</dimen>
     <dimen name="toolbar_title_text_size">18dp</dimen>
-    <dimen name="toolbar_title_text_min_height">54dp</dimen>
+    <dimen name="toolbar_title_text_min_height">38dp</dimen>
     <dimen name="toolbar_title_padding_horizontal">5dp</dimen>
     <dimen name="toolbar_right_img_margin">5dp</dimen>
 
@@ -61,6 +61,11 @@
     <dimen name="setting_item_inner_padding">15dp</dimen>
     <dimen name="setting_item_text_size">13dp</dimen>
     <dimen name="setting_item_height_divider">1dp</dimen>
+
+    <!--帐表页面-->
+    <dimen name="account_table_img_size">84dp</dimen>
+    <dimen name="account_table_txt_size">12dp</dimen>
+    <dimen name="account_table_img_txt_margin">8dp</dimen>
 
 
 </resources>
