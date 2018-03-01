@@ -1,8 +1,24 @@
 <resources>
     <string name="app_name">Reimbursement</string>
 
+    <string name="tab_home">首页</string>
+    <string name="tab_reimbursement">报销</string>
+    <string name="tab_chart">账表</string>
+    <string name="tab_mine">我的</string>
+
     <string name="title_my_apply_list">我的申请</string>
     <string name="title_my_approval_list">我的审批</string>
+
+
+
+    <string name="title_page_mine">我的</string>
+    <string name="title_page_home">首页</string>
+    <string name="tile_page_apply">我的报销</string>
+    <string name="title_page_chart">账表</string>
+    <string name="title_page_business_travel_apply">差旅事前申请</string>
+    <string name="title_page_business_reimb">差旅报销申请</string>
+    <string name="title_page_public_service_apply">公务事前申请</string>
+    <string name="title_page_public_service_reimb">公务报销申请</string>
 
     <string name="title_apply_type">申请类型:</string>
     <string name="title_apply_name">申请人:</string>

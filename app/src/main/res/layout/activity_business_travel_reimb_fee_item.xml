@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    >
 
     <data>
-
+        <variable
+            name="feeItemViewModel"
+            type="cn.jsjst.reimbursement.component.rebim.BTReimbFeeItemViewModel"/>
     </data>
 
     <LinearLayout
@@ -10,7 +14,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
-        <include layout="@layout/title_bar_layout"/>
+        <include layout="@layout/title_bar_layout"
+            bind:toolbarModel="@{feeItemViewModel.mToolbarViewModel}"
+            />
 
         <TextView
             android:id="@+id/tip_serial_number_info_txt"
@@ -21,6 +27,8 @@
             android:textSize="@dimen/custom_reimb_serial_number_tip_text_size"
             android:layout_marginLeft="@dimen/custom_activity_padding"
             android:layout_marginTop="@dimen/custom_activity_padding"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
             />
 
         <RelativeLayout
@@ -31,6 +39,7 @@
             android:paddingRight="@dimen/custom_activity_padding"
             android:paddingLeft="@dimen/custom_activity_padding"
             android:visibility="gone"
+
             >
 
             <TextView
@@ -416,6 +425,7 @@
             android:background="@drawable/bg_next_btn"
             android:gravity="center"
             android:text="@string/btn_confirm"
+            android:textColor="@color/color_white"
             android:textSize="@dimen/custom_apply_next_btn_text_size"
             android:layout_marginRight="@dimen/custom_activity_padding"
             android:textStyle="bold" />

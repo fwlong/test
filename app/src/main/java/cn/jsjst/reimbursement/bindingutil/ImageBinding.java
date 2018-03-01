@@ -29,7 +29,6 @@ public class ImageBinding {
     }
 
 
-
     @BindingAdapter("img:src")
     public static void setSrc(ImageView imageView,int resId){
         imageView.setImageResource(resId);
@@ -44,5 +43,7 @@ public class ImageBinding {
     public static void setIcon(ImageView imageView,Drawable drawable){
         imageView.setImageDrawable(drawable);
     }
+
+
 
 }

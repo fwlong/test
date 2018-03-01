@@ -11,7 +11,9 @@
         android:orientation="vertical" android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include layout="@layout/title_bar_layout"/>
+        <include layout="@layout/title_bar_layout"
+            app:toolbarModel="@{applyModel.mToolbarViewModel}"
+            />
 
         <android.support.design.widget.TabLayout
             android:id="@+id/content_tab"

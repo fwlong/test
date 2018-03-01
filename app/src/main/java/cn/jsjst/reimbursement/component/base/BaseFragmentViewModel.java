@@ -25,6 +25,7 @@ public abstract class BaseFragmentViewModel<T extends Fragment> {
 
     public BaseFragmentViewModel(T context) {
         mFragment = context;
+        initToolbar();
     }
 
 
@@ -42,10 +43,10 @@ public abstract class BaseFragmentViewModel<T extends Fragment> {
         });
         mToolbarViewModel.title.set(getPageTitle());
         mToolbarViewModel.showBackIcon.set(showBackIcon());
-        mToolbarViewModel.showRightMenuIcon.set(showMenuIcon());
         if(getMenuIcon()<=0){
             mToolbarViewModel.showRightMenuIcon.set(false);
         }else{
+            mToolbarViewModel.showRightMenuIcon.set(showMenuIcon());
             mToolbarViewModel.menuIconId.set(getMenuIcon());
         }
     }
@@ -72,13 +73,16 @@ public abstract class BaseFragmentViewModel<T extends Fragment> {
 
     public abstract String getPageTitle();
 
-    public abstract Boolean showBackIcon();
+    public abstract boolean showBackIcon();
 
-    public abstract Boolean showMenuIcon();
+    public abstract boolean showMenuIcon();
 
     public abstract int getMenuIcon();
 
     public void onLeftIconClick() {
+        if(mFragment.isAdded()){
+            mFragment.getActivity().onBackPressed();
+        }
     }
 
     public void onRightIconClick(View view) {

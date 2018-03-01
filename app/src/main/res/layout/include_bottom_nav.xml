@@ -39,7 +39,7 @@
                 android:layout_marginTop="@dimen/nav_icon_txt_margin"
                 android:textColor="@{naviModel.isHomeChecked?@color/colorPrimary:@color/color_tab_unselected_txt}"
                 android:textSize="@dimen/nav_txt_size"
-                android:text="首页"
+                android:text="@string/tab_home"
                 />
 
         </LinearLayout>
@@ -66,7 +66,7 @@
                 android:layout_marginTop="@dimen/nav_icon_txt_margin"
                 android:textColor="@{naviModel.isApplyListChecked?@color/colorPrimary:@color/color_tab_unselected_txt}"
                 android:textSize="@dimen/nav_txt_size"
-                android:text="审批"
+                android:text="@string/tab_reimbursement"
                 />
 
         </LinearLayout>
@@ -108,7 +108,7 @@
                 android:layout_marginTop="@dimen/nav_icon_txt_margin"
                 android:textColor="@{naviModel.isChartChecked?@color/colorPrimary:@color/color_tab_unselected_txt}"
                 android:textSize="@dimen/nav_txt_size"
-                android:text="帐表"
+                android:text="@string/tab_chart"
                 />
 
         </LinearLayout>
@@ -135,7 +135,7 @@
                 android:layout_marginTop="@dimen/nav_icon_txt_margin"
                 android:textColor="@{naviModel.isMineChecked?@color/colorPrimary:@color/color_tab_unselected_txt}"
                 android:textSize="@dimen/nav_txt_size"
-                android:text="我的"
+                android:text="@string/tab_mine"
                 />
 
         </LinearLayout>

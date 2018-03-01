@@ -76,6 +76,7 @@ public abstract class BaseViewModel<T extends BaseActivity> {
     public abstract int getMenuIcon();
 
     public void onLeftIconClick() {
+        mActivity.onBackPressed();
     }
 
     public void onRightIconClick(View view) {

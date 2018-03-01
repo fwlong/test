@@ -33,7 +33,7 @@ public class ApplyListFragment extends BaseFragment {
 //        View contentView = inflater.inflate(R.layout.fragment_apply_list,container,false);
         mFragmentApplyListBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_apply_list, container, false);
-        mApplyModel = new ApplyModel();
+        mApplyModel = new ApplyModel(this);
         mFragmentApplyListBinding.setApplyModel(mApplyModel);
         TabLayout mTabLayout = mFragmentApplyListBinding.contentTab;
         ViewPager mViewPager = mFragmentApplyListBinding.contentPager;

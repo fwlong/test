@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    >
 
     <data>
-
+        <variable
+            name="viewModel"
+            type="cn.jsjst.reimbursement.component.apply.PSApplyFeeViewModel"/>
     </data>
 
     <LinearLayout
@@ -10,7 +14,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include layout="@layout/title_bar_layout" />
+        <include layout="@layout/title_bar_layout"
+            bind:toolbarModel="@{viewModel.mToolbarViewModel}"
+            />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -164,7 +170,7 @@
                 android:background="@drawable/bg_next_btn"
                 android:gravity="center"
                 android:text="@string/btn_next"
-                android:textColor="@android:color/black"
+                android:textColor="@color/color_white"
                 android:textSize="@dimen/custom_apply_next_btn_text_size"
                 android:textStyle="bold" />
 
