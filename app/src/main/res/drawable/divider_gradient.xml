@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <gradient android:startColor="@android:color/white"
+    <gradient android:startColor="@color/color_divider"
         android:endColor="@color/color_window_bg"/>
     <size android:height="@dimen/setting_item_height_divider"/>
 </shape>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="color_white">#ffffff</color>
+    <color name="color_gray">#CCCCCC</color>
     <color name="colorPrimary">#1e81d2</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
@@ -11,6 +13,7 @@
 
     <color name="color_disable">#eaeaea</color>
 
-    <color name="color_window_bg">#fefefe</color>
+    <color name="color_window_bg">#fafafa</color>
+    <color name="color_divider">#eaeaea</color>
 
 </resources>

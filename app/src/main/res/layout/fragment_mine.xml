@@ -28,7 +28,7 @@
             android:layout_below="@id/personal_header_img"
             android:layout_marginTop="@dimen/personal_info_header_margin"
             android:text="@string/personal_info_name"
-            android:textColor="@android:color/white"
+            android:textColor="@color/color_white"
             android:textSize="@dimen/personal_info_text_size" />
 
         <TextView
@@ -38,7 +38,7 @@
             android:layout_alignBaseline="@id/personal_name_txt"
             android:layout_alignParentRight="true"
             android:text="@string/personal_info_duties"
-            android:textColor="@android:color/white"
+            android:textColor="@color/color_white"
             android:textSize="@dimen/personal_info_text_size" />
 
         <TextView
@@ -47,7 +47,7 @@
             android:layout_below="@id/personal_name_txt"
             android:layout_marginTop="@dimen/personal_info_inner_margin"
             android:text="@string/personal_info_depart"
-            android:textColor="@android:color/white"
+            android:textColor="@color/color_white"
             android:textSize="@dimen/personal_info_text_size" />
     </RelativeLayout>
 
