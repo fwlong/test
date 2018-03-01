@@ -29,7 +29,6 @@ public class MineFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
             Bundle savedInstanceState) {
-//        View contentView = inflater.inflate(R.layout.fragment_mine,container,false);
         mBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_mine,container,false);
         mMineViewModel = new MineViewModel(this);
         mBinding.setMineViewModel(mMineViewModel);

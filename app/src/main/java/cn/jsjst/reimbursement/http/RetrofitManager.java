@@ -11,7 +11,6 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import cn.jsjst.reimbursement.BuildConfig;
-import cn.jsjst.reimbursement.utils.Logger;
 import cn.jsjst.reimbursement.utils.UrlsFiled;
 import okhttp3.Connection;
 import okhttp3.Headers;
@@ -204,13 +203,13 @@ public class RetrofitManager {
 
             Connection connection = chain.connection();
             Protocol protocol = connection != null ? connection.protocol() : Protocol.HTTP_1_1;
-            Logger.d("start request" +
-                    "\nrequest method = [" + request.method() + "]" +
-                    "\nrequest url = [" + request.url() + "]" +
-                    "\nrequest protocol = [" + protocol + "]");
+//            Logger.d("start request" +
+//                    "\nrequest method = [" + request.method() + "]" +
+//                    "\nrequest url = [" + request.url() + "]" +
+//                    "\nrequest protocol = [" + protocol + "]");
             if (hasRequestBody) {
                 if (requestBody.contentType() != null) {
-                    Logger.d("request content type = [" + requestBody.contentType() + "]");
+//                    Logger.d("request content type = [" + requestBody.contentType() + "]");
                 }
             }
 
@@ -227,14 +226,14 @@ public class RetrofitManager {
                     sBuilder.append("\n");
                 }
             }
-            Logger.d("request string builder = [" + sBuilder.toString() + "]");
+//            Logger.d("request string builder = [" + sBuilder.toString() + "]");
 
             long startNs = System.nanoTime();
             Response response;
             try {
                 response = chain.proceed(request);
             } catch (Exception e) {
-                Logger.e("request failed, throw error = [" + e.getMessage() + "]");
+//                Logger.e("request failed, throw error = [" + e.getMessage() + "]");
                 throw e;
             }
             long tookMs = TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - startNs);
@@ -243,7 +242,7 @@ public class RetrofitManager {
             String bodySize = contentLength != -1 ? contentLength + "-byte" : "unknown-length";
             String bodyResponse = "Response Code = [" + response.code() + "];\nResponse Size = ["
                     + bodySize + "];\nTook Request Time = [" + tookMs + "ms]";
-            Logger.d(bodyResponse);
+//            Logger.d(bodyResponse);
             BufferedSource source = responseBody.source();
             source.request(Long.MAX_VALUE); // Buffer the entire body.
             Buffer buffer = source.buffer();
@@ -254,22 +253,22 @@ public class RetrofitManager {
                 try {
                     charset = contentType.charset(UTF8);
                 } catch (UnsupportedCharsetException e) {
-                    Logger.e(
-                            "end request, couldn't decode the response body, charset is likely "
-                                    + "malformed.");
+//                    Logger.e(
+//                            "end request, couldn't decode the response body, charset is likely "
+//                                    + "malformed.");
                     return response;
                 }
             }
             if (!isPlaintext(buffer)) {
-                Logger.d("end request, the binary = [" + buffer.size() + "] byte body omitted)");
+//                Logger.d("end request, the binary = [" + buffer.size() + "] byte body omitted)");
                 return response;
             }
 
             if (contentLength != 0) {
-                Logger.json("request result = " + buffer.clone().readString(charset));
+//                Logger.json("request result = " + buffer.clone().readString(charset));
             }
 
-            Logger.d("the binary = [" + buffer.size() + "] byte body\nend request");
+//            Logger.d("the binary = [" + buffer.size() + "] byte body\nend request");
             return response;
         }
 
