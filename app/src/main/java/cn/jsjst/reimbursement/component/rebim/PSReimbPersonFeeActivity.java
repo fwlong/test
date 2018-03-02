@@ -1,5 +1,6 @@
 package cn.jsjst.reimbursement.component.rebim;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -27,5 +28,19 @@ public class PSReimbPersonFeeActivity extends BaseActivity {
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_public_service_reimb_person_fee);
         mViewModel = new PSReimbPersonFeeViewModel(this);
         mBinding.setPersonFeeViewModel(mViewModel);
+        mViewModel.registEventBus();
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mViewModel.unregistEventBus();
+    }
+
+    public void startFeeInfoInput(){
+        Intent feeIntent = new Intent();
+        feeIntent.setClass(this,PSReimbFeeInfoActivity.class);
+        startActivityWithCommonAnimation(feeIntent);
+    }
+
 }

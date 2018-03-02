@@ -1,8 +1,16 @@
 package cn.jsjst.reimbursement.component.rebim;
 
+import android.view.View;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import cn.jsjst.reimbursement.R;
 import cn.jsjst.reimbursement.component.base.BaseActivity;
 import cn.jsjst.reimbursement.component.base.BaseViewModel;
+import cn.jsjst.reimbursement.component.events.EventAddItemFinishMessage;
+import cn.jsjst.reimbursement.component.events.EventReimbFinishMessage;
 
 /**
  * 类说明
@@ -12,9 +20,9 @@ import cn.jsjst.reimbursement.component.base.BaseViewModel;
  * @see [相关类]
  * @since [模块]
  */
-public class BTReimbTimeAddrViewModel extends BaseViewModel {
+public class BTReimbTimeAddrViewModel extends BaseViewModel<BTReimbTimeAddrActivity> {
 
-    public BTReimbTimeAddrViewModel(BaseActivity context) {
+    public BTReimbTimeAddrViewModel(BTReimbTimeAddrActivity context) {
         super(context);
     }
 
@@ -36,5 +44,22 @@ public class BTReimbTimeAddrViewModel extends BaseViewModel {
     @Override
     public int getMenuIcon() {
         return 0;
+    }
+
+    public void registEventBus() {
+        EventBus.getDefault().register(this);
+    }
+
+    public void unregistEventBus() {
+        EventBus.getDefault().unregister(this);
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onSubscribe(EventAddItemFinishMessage event) {
+        mActivity.finish();
+    }
+
+    public void onNextClick(View view) {
+        mActivity.startFeeItemInput();
     }
 }

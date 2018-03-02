@@ -4,8 +4,11 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import org.greenrobot.eventbus.EventBus;
+
 import cn.jsjst.reimbursement.R;
 import cn.jsjst.reimbursement.component.base.BaseActivity;
+import cn.jsjst.reimbursement.component.events.EventApplyFinishMessage;
 import cn.jsjst.reimbursement.databinding.ActivityBusinessTravelApplyTypeFeeBinding;
 
 /**
@@ -27,5 +30,18 @@ public class BTApplyTypeFeeActivity extends BaseActivity {
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_business_travel_apply_type_fee);
         mViewModel = new BTApplyTypeFeeViewModel(this);
         mBinding.setViewModel(mViewModel);
+        mViewModel.registEventBus();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mViewModel.unregistEventBus();
+    }
+
+    public void startUploadFile(){
+        //TODO 测试先finish
+        mViewModel.senFinishEvent();
+
     }
 }

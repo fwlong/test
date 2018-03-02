@@ -1,5 +1,6 @@
 package cn.jsjst.reimbursement.component.apply;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -27,5 +28,18 @@ public class BTApplyBaseInfoActivity extends BaseActivity {
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_business_travel_apply_info);
         mViewModel = new BTApplyBaseInfoModel(this);
         mBinding.setViewModel(mViewModel);
+        mViewModel.registEventBus();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mViewModel.unregistEventBus();
+    }
+
+    public void startTimeAddrInput(){
+        Intent timeAddrIntent = new Intent();
+        timeAddrIntent.setClass(this,BTApplyTimeAddrActivity.class);
+        startActivityWithCommonAnimation(timeAddrIntent);
     }
 }

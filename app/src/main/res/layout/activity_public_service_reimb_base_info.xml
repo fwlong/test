@@ -183,7 +183,9 @@
                 android:text="@string/btn_next"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/custom_apply_next_btn_text_size"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="@{baseInfoViewModel::onNextClick}"
+                />
         </RelativeLayout>
     </LinearLayout>
 

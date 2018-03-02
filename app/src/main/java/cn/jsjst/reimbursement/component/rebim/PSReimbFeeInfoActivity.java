@@ -1,5 +1,6 @@
 package cn.jsjst.reimbursement.component.rebim;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -27,5 +28,17 @@ public class PSReimbFeeInfoActivity extends BaseActivity {
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_public_service_reimb_fee_info);
         mViewModel = new PSReimbFeeInfoViewModel(this);
         mBinding.setFeeInfoViewModel(mViewModel);
+        mViewModel.registEventBus();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mViewModel.unregistEventBus();
+    }
+
+    public void startUploadFile(){
+       //TODO 测试，先finish流程
+        mViewModel.sendFinishEvent();
     }
 }

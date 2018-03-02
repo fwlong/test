@@ -27,5 +27,17 @@ public class BTReimbFeeItemActivity extends BaseActivity {
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_business_travel_reimb_fee_item);
         mViewModel = new BTReimbFeeItemViewModel(this);
         mBinding.setFeeItemViewModel(mViewModel);
+        mViewModel.registEventBus();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mViewModel.unregistEventBus();
+    }
+
+    public void inputComplete(){
+        //TODO finish
+        mViewModel.sendFinishEvent();
     }
 }

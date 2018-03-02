@@ -1,11 +1,11 @@
 package cn.jsjst.reimbursement.component.base;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.WindowManager;
 
 import cn.jsjst.reimbursement.R;
 
@@ -35,6 +35,18 @@ public class BaseActivity extends AppCompatActivity {
     public void showLoading(){}
 
     public void finishLoading(){}
+
+    public void startActivityWithCommonAnimation(Intent intent){
+        startActivity(intent);
+        overridePendingTransition(R.anim.common_enter_in,R.anim.common_alpha_exit);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(0,R.anim.common_exit_out);
+    }
+
 }
 
 

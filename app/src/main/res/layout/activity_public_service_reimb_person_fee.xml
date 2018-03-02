@@ -22,8 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="@dimen/custom_activity_padding"
-            android:focusableInTouchMode="true"
-            android:focusable="true"
+
             >
 
             <TextView
@@ -32,7 +31,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/serial_number_txt"
                 android:textColor="@color/color_black_content"
-                android:textSize="@dimen/custom_reimb_serial_number_tip_text_size" />
+                android:textSize="@dimen/custom_reimb_serial_number_tip_text_size"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                />
 
             <TextView
                 android:id="@+id/title_public_service_reimb_guest_person_txt"
@@ -153,7 +155,9 @@
                 android:text="@string/btn_next"
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/custom_apply_next_btn_text_size"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="@{personFeeViewModel::onNextClick}"
+                />
 
 
         </RelativeLayout>

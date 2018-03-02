@@ -428,7 +428,9 @@
             android:textColor="@color/color_white"
             android:textSize="@dimen/custom_apply_next_btn_text_size"
             android:layout_marginRight="@dimen/custom_activity_padding"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="@{feeItemViewModel::onNextClick}"
+            />
 
     </LinearLayout>
 </layout>

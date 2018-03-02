@@ -50,23 +50,6 @@ public abstract class BaseViewModel<T extends BaseActivity> {
         }
     }
 
-
-    /**
-     * 周期函数，在activity，fragment里调用
-     */
-
-    public void onCreate() {
-    }
-
-    public void onStart() {
-    }
-
-    public void onStop() {
-    }
-
-    public void onDestory() {
-    }
-
     public abstract String getPageTitle();
 
     public abstract boolean showBackIcon();

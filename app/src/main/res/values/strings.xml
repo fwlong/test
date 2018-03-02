@@ -105,8 +105,17 @@
     <string name="mine_item_setting">设置</string>
     <string name="mine_item_version">版本信息</string>
     <string name="mine_item_logout">退出</string>
+    
+    <string name="shortcut_title_business_travel_apply">差旅申请</string>
+    <string name="shortcut_title_business_travel_reimb">差旅报销</string>
+    <string name="shortcut_title_public_service_apply">公务申请</string>
+    <string name="shortcut_title_public_service_reimb">公务报销</string>
+    <string name="shortcut_scan">扫一扫</string>
+    <string name="shortcut_upload_file">上传文件</string>
 
     <string name="btn_next">下一步</string>
     <string name="btn_confirm">确定</string>
+
+
 
 </resources>

@@ -31,7 +31,9 @@
                 android:layout_width="@dimen/personal_header_size"
                 android:layout_height="@dimen/personal_header_size"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/personal_header_margin_top" />
+                android:layout_marginTop="@dimen/personal_header_margin_top"
+                android:src="@drawable/head_img_round"
+                />
 
             <TextView
                 android:id="@+id/personal_name_txt"
@@ -85,17 +87,34 @@
                 android:textSize="@dimen/setting_item_text_size"
                 android:onClick="@{mineViewModel::settingClick}"
                 />
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/setting_item_height"
-                android:drawableLeft="@drawable/ic_help_black"
-                android:drawablePadding="@dimen/setting_item_inner_padding"
-                android:gravity="center_vertical"
-                android:paddingLeft="@dimen/setting_item_padding"
-                android:text="@string/mine_item_version"
-                android:textColor="@color/color_black_title"
-                android:textSize="@dimen/setting_item_text_size" />
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_help_black"
+                    android:drawablePadding="@dimen/setting_item_inner_padding"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/setting_item_padding"
+                    android:text="@string/mine_item_version"
+                    android:textColor="@color/color_black_title"
+                    android:textSize="@dimen/setting_item_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black_content"
+                    android:textSize="@dimen/setting_item_text_size"
+                    android:text="@{mineViewModel.version}"
+                    />
+
+            </LinearLayout>
+
 
             <TextView
                 android:layout_width="match_parent"

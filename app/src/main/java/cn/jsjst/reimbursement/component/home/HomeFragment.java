@@ -15,6 +15,8 @@ import cn.jsjst.reimbursement.component.rebim.PSReimbBaseInfoActivity;
 import cn.jsjst.reimbursement.component.rebim.PSReimbFeeInfoActivity;
 import cn.jsjst.reimbursement.component.rebim.PSReimbPersonFeeActivity;
 import cn.jsjst.reimbursement.component.rebim.PSReimbPersonFeeViewModel;
+import cn.jsjst.reimbursement.component.shortcut.ShortcutActivity;
+import cn.jsjst.reimbursement.component.shortcut.ShortcutViewModel;
 import cn.jsjst.reimbursement.databinding.FragmentHomeBinding;
 
 /**

@@ -27,5 +27,18 @@ public class PSApplyFeeActivity extends BaseActivity {
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_public_service_apply_fee);
         mViewModel = new PSApplyFeeViewModel(this);
         mBinding.setViewModel(mViewModel);
+        mViewModel.registEventBus();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mViewModel.unregistEventBus();
+    }
+
+    public void startUploadFile(){
+        //TODO 测试，先finish流程
+        mViewModel.sendFinishEvent();
+
     }
 }

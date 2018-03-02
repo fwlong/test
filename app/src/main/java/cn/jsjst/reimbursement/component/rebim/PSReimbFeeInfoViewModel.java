@@ -1,7 +1,14 @@
 package cn.jsjst.reimbursement.component.rebim;
 
+import android.view.View;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import cn.jsjst.reimbursement.R;
 import cn.jsjst.reimbursement.component.base.BaseViewModel;
+import cn.jsjst.reimbursement.component.events.EventReimbFinishMessage;
 
 /**
  * 类说明
@@ -36,5 +43,28 @@ public class PSReimbFeeInfoViewModel extends BaseViewModel<PSReimbFeeInfoActivit
     @Override
     public int getMenuIcon() {
         return 0;
+    }
+
+    public void registEventBus() {
+        EventBus.getDefault().register(this);
+    }
+
+    public void unregistEventBus() {
+        EventBus.getDefault().unregister(this);
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onSubscribe(EventReimbFinishMessage event) {
+        if (!event.isTravelReimb()) {
+            mActivity.finish();
+        }
+    }
+
+    public void sendFinishEvent(){
+        EventBus.getDefault().post(new EventReimbFinishMessage(EventReimbFinishMessage.TYPE_OFFICIAL));
+    }
+
+    public void onNextClick(View view){
+        mActivity.startUploadFile();
     }
 }

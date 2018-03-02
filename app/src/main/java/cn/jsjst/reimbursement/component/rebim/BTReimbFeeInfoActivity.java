@@ -1,5 +1,6 @@
 package cn.jsjst.reimbursement.component.rebim;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -27,5 +28,20 @@ public class BTReimbFeeInfoActivity extends BaseActivity {
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_business_travel_reimb_fee_info);
         mViewModel = new BTReimbFeeInfoViewModel(this);
         mBinding.setFeeInfoViewModel(mViewModel);
+        mViewModel.registEventBus();
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mViewModel.unregistEventBus();
+    }
+
+    public void startUploadFile(){
+        //TODO 测试，先打开time，addr 页面
+        Intent timeAddrIntent = new Intent();
+        timeAddrIntent.setClass(this,BTReimbTimeAddrActivity.class);
+        startActivityWithCommonAnimation(timeAddrIntent);
+    }
+
 }

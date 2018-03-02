@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    >
+
+    <data>
+        <variable
+            name="shortcutViewModel"
+            type="cn.jsjst.reimbursement.component.shortcut.ShortcutViewModel"/>
+    </data>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shortcut_item_height"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/shortcut_first_item_bottom_margin"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:id="@+id/shortcut_business_apply"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:onClick="@{shortcutViewModel::onBTApplyClick}"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/shortcut_img_size"
+                        android:layout_height="@dimen/shortcut_img_size"
+                        android:src="@drawable/icon_enter_travel_apply"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/shortcut_txt_size"
+                        android:textColor="@color/color_black_title"
+                        android:text="@string/shortcut_title_business_travel_apply"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/shortcut_business_reimb"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:onClick="@{shortcutViewModel::onBTReimbClick}"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/shortcut_img_size"
+                        android:layout_height="@dimen/shortcut_img_size"
+                        android:src="@drawable/icon_enter_travel_reimburse"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/shortcut_txt_size"
+                        android:textColor="@color/color_black_title"
+                        android:text="@string/shortcut_title_business_travel_reimb"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/shortcut_public_apply"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:onClick="@{shortcutViewModel::onPSApplyClick}"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/shortcut_img_size"
+                        android:layout_height="@dimen/shortcut_img_size"
+                        android:src="@drawable/icon_enter_official_apply"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/shortcut_txt_size"
+                        android:textColor="@color/color_black_title"
+                        android:text="@string/shortcut_title_public_service_apply"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/shortcut_public_reimb"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:onClick="@{shortcutViewModel::onPSReimbClick}"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/shortcut_img_size"
+                        android:layout_height="@dimen/shortcut_img_size"
+                        android:src="@drawable/icon_enter_official_reimburse"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/shortcut_txt_size"
+                        android:textColor="@color/color_black_title"
+                        android:text="@string/shortcut_title_public_service_reimb"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shortcut_item_height"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/shortcut_second_item_bottom_margin"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:id="@+id/shortcut_scan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:onClick="@{shortcutViewModel::onScanClick}"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/shortcut_img_size"
+                        android:layout_height="@dimen/shortcut_img_size"
+                        android:src="@drawable/icon_enter_scan"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/shortcut_txt_size"
+                        android:textColor="@color/color_black_title"
+                        android:text="@string/shortcut_scan"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/shortcut_upload"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:onClick="@{shortcutViewModel::onUploadFileClick}"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/shortcut_img_size"
+                        android:layout_height="@dimen/shortcut_img_size"
+                        android:src="@drawable/icon_enter_file_upload"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/shortcut_txt_size"
+                        android:textColor="@color/color_black_title"
+                        android:text="@string/shortcut_upload_file"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/shortcut_cancel_img_size"
+                android:layout_height="@dimen/shortcut_cancel_img_size"
+                android:padding="@dimen/shortcut_cancel_img_padding"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/shortcut_cancel_bottom_margin"
+                android:src="@drawable/ic_highlight_off"
+                android:onClick="@{shortcutViewModel::onCancelClick}"
+                />
+
+
+        </FrameLayout>
+
+
+</layout>

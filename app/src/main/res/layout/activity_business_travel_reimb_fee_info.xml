@@ -47,7 +47,9 @@
             android:text="@string/btn_next"
             android:textSize="@dimen/custom_apply_next_btn_text_size"
             android:textColor="@color/color_white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="@{feeInfoViewModel::onNextClick}"
+            />
     </LinearLayout>
 
 </layout>

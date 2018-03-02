@@ -4,6 +4,7 @@ import android.databinding.ObservableField;
 import android.view.View;
 import android.widget.Toast;
 
+import cn.jsjst.reimbursement.BuildConfig;
 import cn.jsjst.reimbursement.R;
 import cn.jsjst.reimbursement.component.base.BaseFragmentViewModel;
 
@@ -20,6 +21,7 @@ public class MineViewModel extends BaseFragmentViewModel<MineFragment> {
     public ObservableField<String> userName = new ObservableField<>("test name");
     public ObservableField<String> userDepart = new ObservableField<>("test depart");
     public ObservableField<String> userDuties = new ObservableField<>("test duties");
+    public ObservableField<String> version = new ObservableField<>(BuildConfig.VERSION_NAME);
 
     public MineViewModel(MineFragment context) {
         super(context);

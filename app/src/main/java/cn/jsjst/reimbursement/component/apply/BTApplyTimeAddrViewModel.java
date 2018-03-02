@@ -1,7 +1,14 @@
 package cn.jsjst.reimbursement.component.apply;
 
+import android.view.View;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import cn.jsjst.reimbursement.R;
 import cn.jsjst.reimbursement.component.base.BaseViewModel;
+import cn.jsjst.reimbursement.component.events.EventApplyFinishMessage;
 
 /**
  * 类说明
@@ -36,5 +43,25 @@ public class BTApplyTimeAddrViewModel extends BaseViewModel<BTApplyTimeAddrActiv
     @Override
     public int getMenuIcon() {
         return 0;
+    }
+
+
+    public void registEventBus() {
+        EventBus.getDefault().register(this);
+    }
+
+    public void unregistEventBus() {
+        EventBus.getDefault().unregister(this);
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onSubscribe(EventApplyFinishMessage event) {
+        if (event.isTravelApply()) {
+            mActivity.finish();
+        }
+    }
+
+    public void onNextClick(View view) {
+        mActivity.startTypeFeeInput();
     }
 }
