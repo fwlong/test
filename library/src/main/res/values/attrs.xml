@@ -1,0 +1,125 @@
+<resources>
+    <declare-styleable name="SwipeToLoadLayout">
+        <attr name="refresh_enabled" format="boolean" />
+        <attr name="load_more_enabled" format="boolean" />
+
+        <attr name="swipe_style" format="enum">
+            <enum name="classic" value="0" />
+            <enum name="above" value="1" />
+            <enum name="blew" value="2" />
+            <enum name="scale" value="3" />
+        </attr>
+
+        <attr name="drag_ratio" format="float" />
+
+        <attr name="refresh_trigger_offset" format="dimension" />
+        <attr name="load_more_trigger_offset" format="dimension" />
+        <attr name="refresh_final_drag_offset" format="dimension" />
+        <attr name="load_more_final_drag_offset" format="dimension" />
+
+        <attr name="swiping_to_refresh_to_default_scrolling_duration" format="integer" />
+        <attr name="release_to_refreshing_scrolling_duration" format="integer" />
+        <attr name="refresh_complete_delay_duration" format="integer" />
+        <attr name="refresh_complete_to_default_scrolling_duration" format="integer" />
+        <attr name="default_to_refreshing_scrolling_duration" format="integer" />
+        <attr name="swiping_to_load_more_to_default_scrolling_duration" format="integer" />
+        <attr name="release_to_loading_more_scrolling_duration" format="integer" />
+        <attr name="load_more_complete_delay_duration" format="integer" />
+        <attr name="load_more_complete_to_default_scrolling_duration" format="integer" />
+        <attr name="default_to_loading_more_scrolling_duration" format="integer" />
+        <attr name="header_refreshing_sink" format="dimension|reference"/>
+        <attr name="swipe_loading_background" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeToLoadRecyclerView">
+        <attr name="swipe_background" format="color|reference" />
+        <attr name="swipe_color" format="color|reference" />
+        <attr name="header_height" format="dimension|reference" />
+        <attr name="footer_height" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialCalendarView">
+
+        <!-- 日期文字样式 -->
+        <attr name="cv_dateTextAppearance" format="reference" />
+
+        <!-- 星期文字样式 -->
+        <attr name="cv_weekDayTextAppearance" format="reference" />
+
+        <!-- 头部文字样式 -->
+        <attr name="cv_headerTextAppearance" format="reference" />
+
+        <!-- 箭头颜色（可以作用于自定义箭头样式） -->
+        <attr name="cv_arrowColor" format="color" />
+
+        <!-- 左箭头样式 -->
+        <attr name="cv_leftArrowMask" format="reference" />
+
+        <!-- 右箭头样式 -->
+        <attr name="cv_rightArrowMask" format="reference" />
+
+        <!-- 选中日期时的背景颜色 -->
+        <attr name="cv_selectionColor" format="color" />
+
+        <!-- 展示日期选项 -->
+        <attr name="cv_showOtherDates" format="integer">
+            <flag name="none" value="0" /> <!-- 不展示任何non-enable日期 -->
+            <flag name="other_months" value="1" /> <!-- 展示其它月日期（上下月） -->
+            <flag name="out_of_range" value="2" /> <!-- 如果other_months是可用的，它将展示超出最小最大范围的日期 -->
+            <flag name="decorated_disabled" value="4" /> <!-- 展示当前月内的disable的日期 -->
+            <flag name="defaults" value="4" /> <!-- 默认decorated_disabled -->
+            <flag name="all" value="7" /> <!-- 展示所有，前面三个相加 -->
+        </attr>
+
+        <!-- 点击非本月的日期时（上个月或者下个月），是否切换到上个月或者下个月 -->
+        <!-- 前提是show_other_dates展示other_month -->
+        <attr name="cv_allowClickDaysOutsideCurrentMonth" format="boolean" />
+
+        <!-- 定义一个星期7天的标题名字 -->
+        <attr name="cv_weekDayLabels" format="reference" />
+
+        <!-- 定义一个月31天的标题名字 -->
+        <attr name="cv_monthLabels" format="reference" />
+
+        <!-- We want to accept match_parent but not wrap_content. It'd be better if we could
+        point to the real match_parent constant, but since it hasn't change since API 1,
+        I think it's safe to hardcode it-->
+        <!-- 翻译大意：推荐使用match_parent而不是wrap_content，使用具体的数值更好 -->
+        <attr name="cv_tileSize" format="dimension" >
+            <enum name="match_parent" value="-1" />
+        </attr>
+
+        <!-- 标题高度 -->
+        <attr name="cv_tileHeight" format="dimension" >
+            <enum name="match_parent" value="-1" />
+        </attr>
+
+        <!-- 标题宽度 -->
+        <attr name="cv_tileWidth" format="dimension" >
+            <enum name="match_parent" value="-1" />
+        </attr>
+
+        <!-- 配置一个星期的第一天是星期几 -->
+        <attr name="cv_firstDayOfWeek" format="enum">
+            <enum name="sunday" value="1" />
+            <enum name="monday" value="2" />
+            <enum name="tuesday" value="3" />
+            <enum name="wednesday" value="4" />
+            <enum name="thursday" value="5" />
+            <enum name="friday" value="6" />
+            <enum name="saturday" value="7" />
+        </attr>
+
+        <!-- 日历模式：月\周 -->
+        <attr name="cv_calendarMode" format="enum">
+            <enum name="month" value="0" />
+            <enum name="week" value="1" />
+        </attr>
+
+        <!-- 标题切换时的动画方向 -->
+        <attr name="cv_titleAnimationOrientation" format="enum">
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

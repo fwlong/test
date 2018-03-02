@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.memedai.swipetoloadlayout.integration.wallet.WalletFooter
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/colorRefreshBackground"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/wallet_foot_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <cn.memedai.swipetoloadlayout.integration.wallet.WalletRefreshView
+            android:id="@+id/swipe_to_load_wallet_load_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/colorHintNoMoreData"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_no_more_data"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:textColor="@color/colorHintNoMoreData"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/colorHintNoMoreData"/>
+        </LinearLayout>
+    </RelativeLayout>
+</cn.memedai.swipetoloadlayout.integration.wallet.WalletFooter>

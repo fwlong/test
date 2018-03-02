@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_no_more_data">没有更多了</string>
+
+    <string name="previous">Go to previous</string>
+    <string name="next">Go to next</string>
+    <string name="calendar">Calendar</string>
+
+    <string name="text_cancel">取消</string>
+    <string name="text_confirm">确定</string>
+
+    <!-- ScanQR -->
+    <string name="permission_camera_tip">请给予相机相关权限，否则无法打开相关功能</string>
+    <!--6.0权限申请管理-->
+    <string name="easy_permissions_denied_tip">权限被拒绝,请授予应用相应权限</string>
+    <string name="easy_permissions_denied_camera_tip">无法获取摄像头数据，请检查是否已经打开摄像头权限。</string>
+
+    <string name="scan_tips">将二维码放入框内，即可自动扫码</string>
+    <string name="scan_button">从相册选</string>
+    <string name="scan_title">二维码扫描</string>
+    <string name="scan_fail">扫描失败</string>
+    <string name="scan_start">开始扫描</string>
+    <string name="scan_stop">停止扫描</string>
+    <string name="scan_album_fail">无法识别二维码</string>
+</resources>
